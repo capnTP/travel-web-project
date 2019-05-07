@@ -1,0 +1,43 @@
+fragment bookingFields on Booking {
+  id
+  created_at
+  updated_at
+
+  adult_pax
+
+  bookingCurrencyCode
+  booking_no
+  booking_status_id
+
+  child_pax
+
+  infant_pax
+
+  subTour {
+    id
+    name
+  }
+  sub_product_id
+
+  tour {
+    id
+
+    name
+    tourMedias {
+      id
+      detail {
+        id
+        absoluteUrl
+      }
+    }
+  }
+  tour_id
+  trip_starts
+
+  user {
+    name
+    countryId
+    language_id
+  }
+  user_id
+}

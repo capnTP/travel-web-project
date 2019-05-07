@@ -1,0 +1,26 @@
+mutation toursPricing($input: ToursPricingInput!, $currency: TourCurrencyInput) {
+  toursPricing(input: $input, currency: $currency) {
+    id
+    subProductId
+    startDate
+    endDate
+    prices {
+     pax
+     walkIn {
+      adults
+      children
+      infants
+     }
+     selling {
+      adults
+      children
+      infants
+    }
+    exchange {
+     adults
+     children
+     infants
+    }
+   }
+  }
+}

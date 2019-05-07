@@ -1,0 +1,100 @@
+@import "../main.less";
+
+:local {
+  .policies {
+    .max-content-width();
+
+    .heading {
+      margin: 50px 0 20px 0;
+    }
+
+    .main_tab {
+      margin-top: 50px;
+      min-height: 384px;
+
+      &>ul[class*='_header_']{
+        margin-bottom: 30px;
+      }
+
+      .tab {
+        .title {
+          margin: 0 0 20px 0;
+        }
+
+        .list {
+          margin: 0 0 0 20px;
+          padding: 0;
+
+          & > li {
+            list-style: disc;
+            margin-bottom: 10px;
+          }
+        }
+
+        .info_graphic{
+          .flex-block();
+          margin-top: 50px;
+
+          padding-top: 50px;
+
+          &>.box_info{
+            padding: 20px;
+            position: relative;
+            width: 50%;
+
+            &:first-child{
+              border-top: 16px solid fade(@primary,60);
+            }
+
+            &:last-child{
+              border-top: 16px solid fade(@danger,60);
+            }
+
+            &>span.date_title{
+              background: #fff;
+              border: 1px solid @primary;
+              padding: 8px;
+              position: absolute;
+              right: 0;
+              top: -65px;
+
+              &::before{
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid @primary;
+                bottom: -10px;
+                content: "";
+                display: block;
+                height: 0;
+                position: absolute;
+                right: 5px;
+                width: 0;
+              }
+
+              &::after{
+                background: @white;
+                border-radius: 50%;
+                bottom: -29px;
+                content: "";
+                display: block;
+                height: 10px;
+                position: absolute;
+                right: 10px;
+                width: 10px;
+              }
+            }
+
+            &>p{
+              margin: 30px 0;
+              padding: 10px 0;
+            }
+
+            .date_info{
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

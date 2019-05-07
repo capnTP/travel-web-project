@@ -1,0 +1,68 @@
+@import "../assets/icons/style.css";
+@import 'prefixer';
+@import "colors.less";
+@import "bg.less";
+@import "button.less";
+@import "common.less";
+@import "flex.less";
+@import "text.less";
+@import "alert.less";
+@import "../assets/fonts/fonts.css";
+
+.max-content-width(@add: 0%) {
+  margin: 0 auto;
+  .transition-content();
+  @media only screen and (min-width: 576px) {
+    max-width: 100%;
+    width: 560px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 100%;
+    width: 752px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    max-width: 100%;
+    width: 976px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    max-width: 100%;
+    width: 1184px;
+  }
+}
+
+.transition-content() {
+  .transition(all 0.5s 0s cubic-bezier(.55, 0, .1, 1));
+}
+
+@box-shadow-normal: 0 20px 40px -20px rgba(54, 52, 54, 0.1);
+@box-shadow-active: 0 25px 50px -25px rgba(54, 52, 54, 0.1);
+.disable-selection() {
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+}
+
+.container_width() {
+  max-width: 1200px;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    max-width: 992px;
+  }
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}

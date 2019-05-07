@@ -1,0 +1,67 @@
+{
+  "id": "home",
+  "seo_title":
+    "Discover Wonderful Asian Tours, Trips & Shows - Book with The Asia",
+  "seo_description":
+    "Have an incredible adventure with tours, trips and shows across Asia. We have cultivated the best travel experiences for you - Create memories with The Asia.",
+  "title_tag": "Experience Your Asia",
+  "experiences": "Experiences",
+  "learn more": "Learn more",
+  "share this": "Share these experiences with your friends and family!",
+  "whats on offer": "What’s On Offer? ",
+  "we are lossing": "Experience your Asia for less!",
+  "stay informed": "Stay in the know! ",
+  "about our latest":
+    "Receive the latest promotions and travel offers with our e-newsletter",
+  "click here to signup": "Click here to sign up",
+  "where to go": "Where To Go? ",
+  "our standout": "Explore Asia's most stunning destinations",
+  "see all": "See all",
+  "why book with": "Why Book With",
+  "learn more about us": "Learn more about us",
+  "what are they saying": "What Are They Saying? ",
+  "latest reviews": "Reviews and thoughts from our community",
+  "what is happenning": "Did You Know? ",
+  "what is going on": "Tips, tricks, and insights with a local perspective?",
+  "continue reading": "Continue Reading",
+  "read more": "Read more",
+  "experience description":
+    "Our team of local experts carefully assesses every aspect of every tour, activity, and attraction before hand-selecting it for TheAsia.com. This means we personally try every product we offer to ensure the highest quality and most authentic experiences for you.",
+  "booking description":
+    "TheAsia.com is more than an online travel booking platform. We are believers in the power of travel and aim to share our passion for discovery and unique experiences with you. No matter your style, your vision, your interests, or your dreams – we have everything you need. <br/><br/> Asia is our home and we welcome you to define your journey here with us. So, what are you waiting for? There’s never been a better time to experience YOUR Asia.",
+  "booking description bottom left":
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "booking description bottom right":
+    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "whats new": "What's New? ",
+  "discover our latest": "Discover our latest hand-picked selections",
+  "national-parks": {
+    "name": "Nature/Adventure Activities",
+    "description": "Discover the thrills of the great outdoors"
+  },
+  "dinner2": {
+    "name": "Food & Restaurants",
+    "description": "Indulge in the vibrant flavours of Asian cuisine"
+  },
+  "shows": {
+    "name": "Shows & Entertainment",
+    "description": "Experience local culture through the performing arts"
+  },
+  "snorkeling": {
+    "name": "Water Sports",
+    "description": "Adventure awaits above and below the waves"
+  },
+  "food-recipe2": {
+    "name": "Cooking Classes",
+    "description": "Learn to prepare traditional dishes like a local"
+  },
+  "guide2": {
+    "name": "Local Guides",
+    "description": "Never miss a detail with the support of a local guide"
+  },
+  "driver2": {
+    "name": "Transportation",
+    "description": "Remove stress from your holiday with pre-arranged transfers"
+  },
+  "search placeholder": "Search by Destination or Activity"
+}

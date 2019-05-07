@@ -1,0 +1,31 @@
+@import '../style/main.less';
+
+.top_banner_cross(@zIndex) {
+  margin-bottom: 55px;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    background: @white;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 110%;
+    z-index: @zIndex;
+  }
+}
+
+:global(.fadeIn-appear) {
+  opacity: 0.01;
+}
+
+:global(.fadeIn-appear.fadeIn-appear-active) {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}

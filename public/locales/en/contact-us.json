@@ -1,0 +1,76 @@
+{
+  "id":"contact",
+  "seo":{
+   "title":"Contact us - Find the best destinations Asia has to offer - The Asia",
+   "description":"Wherever you plan to go, The Asia is always accessible to advise or help you while you travel  across Asia. Contact us today - The Asia"
+  },
+  "heading": {
+    "title": "Contact Us"
+  },
+  "categories":[
+    {
+      "id": "amend_my_booking",
+      "name": "Amend my Booking",
+      "subject": "Amend Request for The Asia Booking-EN",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id": "check_status",
+      "name": "Check the status of my booking",
+      "subject": "Check my Booking Status-EN",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id": "technical_issue",
+      "name": "Technical issue",
+      "subject": "Technical issue report-EN",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id": "general",
+      "name": "General",
+      "subject": "General Inquiry-EN",
+      "email": "enservice@theasia.com"
+    }
+  ],
+  "content": {
+    "input": {
+      "firstName": {
+        "title": "Name",
+        "placeholder": "Type your name"
+      },
+      "lastName": {
+        "title": "Last name",
+        "placeholder": "Type your last name"
+      },
+      "email": {
+        "title": "Email",
+        "placeholder": "Type your email"
+      },
+      "language": {
+        "title": "Language"
+      },
+      "bookingNumber": {
+        "title": "Booking Number",
+        "placeholder": "Type booking number"
+      },
+      "categories": {
+        "title": "Categories"
+      },
+      "message": {
+        "title": "Message",
+        "placeholder": "Type your message"
+      },
+      "send": "Send"
+    },
+    "infoBox": {
+      "heading": "The Asia opening time",
+      "days": "Monday to friday",
+      "time": "9:00 to 18:00 (GMT+7)",
+      "userTime": "Your time",
+      "userTimeConvert": "Convert to your time",
+      "finalDays": "Sunday to friday",
+      "finalTime": "9:00 to 18:00 (GMT+7)"
+    }
+  }
+}

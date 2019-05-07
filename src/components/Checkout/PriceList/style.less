@@ -1,0 +1,107 @@
+@import '../../../style/colors.less';
+:local {
+  .item {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    // grid-template-columns: 25% 15% 25% 35%;
+    //grid-template-columns: 30% 30% 40%;
+    margin-bottom: 15px;
+    > .pax_name {
+      align-items: center;
+      //display: grid;
+      width: 30%;
+      -ms-flex-align: center;
+      //grid-column-gap: 5px;
+      //grid-template-columns: auto auto;
+      justify-content: flex-start;
+      > .paxName {
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+    }
+    > .pax {
+      width: 30%;
+      > input {
+        min-height: 27px;
+        // padding: 5;
+        text-align: center;
+        width: 90%;
+      }
+    }
+    .edit {
+      > button {
+        border: none !important;
+        margin-bottom: 0;
+        // &:hover {
+        //   background-color: transparent !important;
+        //   color:
+        // }
+      }
+    }
+  }
+  .price_breakdown {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 15px;
+    > div {
+      min-height: 40px;
+      &.pax_name {
+        align-items: center;
+
+        -ms-flex-align: center;
+
+        width: 30%;
+        justify-content: flex-start;
+        > .paxName {
+          font-size: 16px;
+          text-transform: capitalize;
+          margin-right: 5px;
+        }
+      }
+      > .pax {
+        font-weight: bold;
+        > span {
+          font-size: 16px;
+        }
+      }
+      &.pax {
+        width: 20%;
+        align-items: center;
+        box-sizing: border-box;
+        > span {
+          color: @black;
+          font-size: 16px;
+        }
+      }
+      &.sub_total {
+       text-align: right;
+        width: 50%;
+        justify-content: flex-end;
+        > span {
+          color: @black;
+        }
+      }
+    }
+    .edit {
+      button {
+        border: none !important;
+        // &:hover {
+        //   background-color: transparent !important;
+        // }
+      }
+    }
+  }
+  .item {
+    > .sub_total {
+      width: 40%;
+      text-align: right;
+      //align-items: center;
+      //display: flex;
+      //justify-content: flex-end;
+      > span {
+        color: @black;
+      }
+    }
+  }
+}

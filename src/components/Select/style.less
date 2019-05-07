@@ -1,0 +1,127 @@
+:local {
+  .select {
+    display: inline-block;
+
+    max-width: 100%;
+    position: relative;
+
+    vertical-align: top;
+    &:after {
+      @arrow-width: 0.6em;
+      @arrow-line-width:2px;
+      border: 0 solid black;
+      border-bottom-width: @arrow-line-width;
+      border-left-width: @arrow-line-width;
+      border-radius: 2px;
+
+      box-sizing: inherit;
+
+      content: ' ';
+
+      display: block;
+      height: @arrow-width;
+      margin-top: -0.4375em;
+      pointer-events: none;
+      position: absolute;
+      right: 1.125em;
+      top: 50%;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      width: @arrow-width;
+      z-index: 4;
+    }
+
+    &.is-loading {
+      &::after {
+        border: 2px solid #dbdbdb;
+        border-radius: 290486px;
+        border-right-color: transparent;
+        border-top-color: transparent;
+
+        content: '';
+
+        display: block;
+        height: 1em;
+        margin-top: 0;
+        position: absolute;
+        right: 0.625em;
+        top: 0.5em;
+        -webkit-transform: none;
+        transform: none;
+
+        width: 1em;
+        :global {
+          -webkit-animation: spinAround 0.5s infinite linear;
+          animation: spinAround 0.5s infinite linear;
+        }
+      }
+    }
+
+    &.is-disabled {
+      cursor: not-allowed;
+
+      opacity: 0.5;
+    }
+
+    &.is-full-width {
+      width: 100%;
+
+      > select {
+        width: 100%;
+      }
+    }
+
+    > select {
+      align-items: center;
+
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      box-shadow: none;
+
+      color: #363636;
+
+      cursor: pointer;
+
+      display: block;
+      font-size: 1rem;
+      height: 2.25em;
+      justify-content: flex-start;
+      line-height: 1.5;
+      min-width: 100px;
+      outline: 0;
+      padding: calc(0.375em - 1px) calc(0.625em - 1px);
+
+      position: relative;
+      vertical-align: top;
+
+      width: 100%;
+
+      &:not([multiple]) {
+        padding-right: 2.5em;
+      }
+
+      &:disabled,
+      &.is-disabled {
+        cursor: not-allowed;
+      }
+
+      &:hover,
+      &.is-hover {
+        &:not(:disabled) {
+          border-color: #b5b5b5;
+        }
+      }
+
+      &:focus,
+      &.is-focus {
+        border-color: #3273dc;
+        box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+      }
+    }
+  }
+}

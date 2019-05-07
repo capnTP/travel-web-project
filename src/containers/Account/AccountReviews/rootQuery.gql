@@ -1,0 +1,64 @@
+query rootQuery($userId: ID!) {
+  bookings(where: {user_id: $userId}) {
+    id
+
+    bookingCurrencyCode
+    booking_no
+    booking_status_id
+
+    passportNumber
+    pickupLocationTime
+    pickupPlace
+    pickupTime
+
+    review {
+      id
+      group_size
+      rating
+      recommend
+      review
+      review_title
+      status
+    }
+
+    specialRequest
+    subTour {
+      id
+      cancellationPolicy {
+        id
+        name
+        description
+      }
+      name
+    }
+    sub_product_id
+
+    total
+    tour {
+      id
+      name
+      tourMedias {
+        id
+        detail {
+          id
+          absoluteUrl
+        }
+      }
+    }
+    tour_id
+    trip_starts
+    
+    user {
+      id
+      countryId
+      email
+      language_id
+      name
+      nationality {
+        id
+        name
+      }
+      phone
+    }
+  }
+}

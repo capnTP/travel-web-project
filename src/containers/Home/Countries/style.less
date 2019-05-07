@@ -1,0 +1,128 @@
+@import "../../../style/main.less";
+
+:local {
+  .countries_component {
+    box-sizing: border-box;
+    height: auto;
+    margin: 100px auto;
+    padding: 100px 0px 0px 0px;
+    max-width: 1200px;
+    .max-content-width();
+
+    @media @for-phone, @for-min-phone {
+      margin: 30px auto;
+      padding: 30px 0px 0px 0px;
+    }
+
+    > .title_tag {
+      box-sizing: border-box;
+      margin-bottom: 50px;
+
+      > span {
+        font-size: 24px;
+
+        &:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+
+    > .countries {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: space-between;
+      width: 100%;
+
+      > .cards {
+        box-sizing: border-box;
+        box-shadow: 0 15px 20px -10px rgba(54, 52, 54, 0.15);
+        cursor: pointer;
+        height: 250px;
+        margin-bottom: 30px;
+        position: relative;
+        width: 32%;
+        .transition-content();
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          width: calc(50% - 15px);
+        }
+
+        > img {
+          border-radius: 3px;
+          height: 250px;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        > .country {
+          background-color: rgba(0, 0, 0, 0.2);
+          //align-items: flex-end;
+          box-sizing: border-box;
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          .transition-content();
+
+          > span {
+            .transition-content();
+
+            bottom: 0;
+            color: @white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            position: absolute;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          }
+        }
+
+        &:hover {
+          > .country {
+            background-color: #4cdc87b5;
+            //align-items: center;
+            .transition-content();
+
+            > span {
+              .transition-content();
+
+              bottom: calc(50% - 32px);
+              font-size: 32px;
+              margin-bottom: 0;
+              text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+            }
+          }
+        }
+      }
+    }
+
+    @media @for-phone, @for-min-phone {
+      width: 100%;
+
+      > .title_tag {
+        margin-bottom: 2em;
+        padding: 0 40px;
+      }
+
+      > .countries {
+        flex-direction: column;
+        padding: 0 23px;
+
+        > .cards {
+          width: 100%;
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

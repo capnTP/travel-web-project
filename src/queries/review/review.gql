@@ -1,0 +1,7 @@
+#import "./reviewFields.gql"
+
+query review($id: ID, $where: ReviewFilter) {
+  review(id: $id, where: $where) {
+    ...reviewFields
+  }
+}

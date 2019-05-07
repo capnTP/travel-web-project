@@ -1,0 +1,7 @@
+#import "./languageFields.gql"
+
+query languagesQuery {
+  languages {
+    ...languageFields
+  }
+}

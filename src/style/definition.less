@@ -1,0 +1,67 @@
+@import 'prefixer';
+
+//@baseColor: #fff;
+//@baseText: #000;
+//@baseTextShade: #ebeff1;
+//@baseShade: #f2f4f6;
+//@primaryColor: #4bab86;
+//@baseError: #fa4258;
+//@inputPlaceholder: #b7c4ca;
+//@lineHeight: 1.15;
+//@promoTextColor: #374f69;
+
+.cross_cut() {
+  &::before {
+    background: #fff;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 110%;
+    z-index: 1;
+  }
+}
+
+.clear-fix() {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+//.css_base_color {
+//  color: @baseText;
+//  background-color: @baseColor;
+//  a:not(.css_primary_text_color) {
+//    color: @baseText;
+//  }
+//}
+//.css_base_shade_color {
+//  background-color: @baseShade;
+//}
+
+//.css_primary_text_color {
+//  color: @primaryColor;
+//}
+
+//.css_primary_bg_color {
+//  background-color: @primaryColor;
+//}
+
+.bold {
+  font-weight: bold;
+}
+
+.disable-selection() {
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+}

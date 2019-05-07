@@ -1,0 +1,60 @@
+// @white: #fff;
+@import '../../../../../style/main.less';
+
+:local {
+  .hide {
+    display: none;
+  }
+
+  .pricing_container {
+    background: @white;
+    padding: 10px 20px;
+
+    @media @for-phone, @for-min-phone {
+      padding: 0;
+    }
+
+    > ul {
+      list-style: none;
+      padding: 0;
+
+      > li {
+        display: flex;
+        justify-content: center;
+        min-height: 20px;
+
+        > ul {
+          list-style: none;
+          padding: 0;
+          width: 25%;
+          &:first-child {
+            align-items: flex-start;
+            width: 50%;
+          }
+
+          > li {
+            flex: .25;
+            font-size: 14px;
+            min-height: 20px;
+            padding: 10px;
+
+            > .passenger {
+              font-size: 16px;
+              font-weight: bold;
+            }
+
+            &:first-child {
+              font-size: 16px;
+            }
+
+            &.our_price {
+              color: @orange;
+              min-height: 20px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+}

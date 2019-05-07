@@ -1,0 +1,74 @@
+@import '../../../../style/colors.less';
+
+:local {
+  .include_exclude {
+    // padding: 25px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    > .list {
+      // margin: 20px 0px;
+      > .title {
+        color: @black;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          align-items: center;
+          display: flex;
+          padding: 5px 0;
+
+          span {
+            font-size: 16px;
+            line-height: 1.5;
+
+            &.span_icon {
+              font-size: 26px !important;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .include {
+    display: grid;
+    grid-template-columns: 100%;
+
+    > .list {
+      // margin: 20px 0px;
+      > .title {
+        color: @black;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          align-items: center;
+          display: flex;
+          padding: 5px 0;
+
+          span {
+            font-size: 16px;
+            line-height: 1.5;
+
+            &.span_icon {
+              font-size: 26px !important;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

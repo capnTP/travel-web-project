@@ -1,0 +1,6 @@
+mutation storeSearch($input: SearchInput){
+  storeSearch(input: $input){
+    query
+  }
+}
+

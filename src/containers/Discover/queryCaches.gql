@@ -1,0 +1,58 @@
+query($categoryTypesFilter: CategoryTypesFilter) {
+  categoryTypes(filter: $categoryTypesFilter) {
+    id
+    name
+    localizations {
+      id
+      name
+    }
+    categories {
+      id
+      name
+      localizations {
+        id
+        name
+      }
+    }
+    name
+    order
+    thumbnailUrl
+  }
+
+  countries(where: { active: true }) {
+    id
+
+    cities {
+      id
+
+      filterThumbnail
+      image
+      localizations {
+        id
+        languageId
+        name
+      }
+      name
+    }
+
+    localizations {
+      id
+      languageId
+      name
+    }
+
+    name
+
+    thumbnailUrl
+  }
+
+  features {
+    id
+    name
+    localizations {
+      id
+      languageId
+      name
+    }
+  }
+}

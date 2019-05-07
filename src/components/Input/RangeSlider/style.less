@@ -1,0 +1,52 @@
+@import "~rc-slider/assets/index.css";
+@import '../../main.less';
+:local{
+  .range_slider{
+    color: @textPrimary;
+    display: block;
+    padding: 0 10px 10px;
+    &>p{
+      margin: 0 0 40px;
+      &>span{
+        &:nth-child(2){
+          color: @secondary;
+          float: right;
+          font-weight: bold;
+        }
+      }
+      &:after{
+        clear: both;
+        content: '';
+        display: block;
+      }
+    }
+    &>div{
+      padding: 0 16px;
+    }
+    :global(.rc-slider-handle:active){
+      box-shadow: none;
+    }
+    :global(.rc-slider-step){
+      &>span{
+        background: rgba(54, 52, 54, 0.2);
+        border: none;
+        border-radius: 0;
+        bottom: auto;
+        height: 3px;
+        left: 10%;
+        margin-left: auto;
+        margin-top: 1px;
+        width: 1px;
+        &:global(.rc-slider-dot){
+          margin-left: -0.5px;
+        }
+        &:global(.rc-slider-dot-active){
+          width: 2px;
+        }
+        &:nth-child(2n-1){
+          height: 5px;
+        }
+      }
+    }
+  }
+}

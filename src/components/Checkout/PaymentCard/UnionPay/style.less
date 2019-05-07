@@ -1,0 +1,26 @@
+@import '../../../../style/main.less';
+
+:local {
+  .union_pay_wrapper {
+    display: block;
+
+    > .payment {
+      > span {
+        margin-right: 10px;
+
+        &[role="button"] {
+          cursor: pointer;
+        }
+
+        @media @for-phone, @for-min-phone {
+          display: block;
+          padding: 5px 0;
+
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

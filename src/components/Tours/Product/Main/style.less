@@ -1,0 +1,27 @@
+@white: #fff;
+@highlightColor: #ff5064;
+@lightGray: #b7c4ca;
+
+:local {
+  .product_card {
+    background: @white;
+    height: auto;
+    padding-top: 20px;
+    width: 100%;
+
+    > .pagination {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 0 20px;
+
+      > span {
+        color: @lightGray;
+        font-size: 12px;
+      }
+    }
+
+  }
+}

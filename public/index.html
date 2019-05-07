@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <meta name="theme-color" content="#4bab86">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="The Asia">
+  <meta name="msapplication-TileImage" content="%PUBLIC_URL%/site/images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#4bab86">
+  <meta name="google-site-verification" content="ecnoNCzmynX8XleaokttoJtLlyXQ9CS--VrJMdBVZN8" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/site/images/icons/icon-152x152.png">
+
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/site/manifest.json">
+  <link rel='icon' type='image/png' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEX///9NrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIf///9iJ2suAAAAEHRSTlMBEWGv779xIZ9Rgc8x30GPhZGg6gAAAAFiS0dEAIgFHUgAAAAHdElNRQfhDBwIIwR5JIVhAAABQElEQVQ4y61T2Y6EMAxLD0qhtOT/v3Ydt2VgZ6R52I2EOOwkdhpE/i2cD1ERcUnrJzjrLfIbZbPksBvog5XxT9yQ3UkiQdwOev6FlwP3qnnRgoe14EtFodBYH2+u35tdeDwvOejlYseF2agiW+1YS1WjCPRbfVlJhw5TmVs0GYeqOOijkmxsq6e6HBS2SgMBKWwAxIheRwLeE8AoQQMLJMuQPISxYqEiI0r3KA7tS3dKU948dV/06IoNaDg1gVUXmQTkdbzXsrBubRLgMQFnN081JJwyCRBXpjroP0cL80eRdK/zCE+Njqo4QNrkOe7z8PpM83DDQdnwbwcctPZBsSNStyduE277kDr1lccGVS3xSqHAfuBX2InEazE3HcN6xXrzdFu5F17el9KWdvZ8W9q59qkhPq799x9Hvv56f4gfOrMV3dgcdDMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMTItMjhUMDg6MzU6MDQtMDU6MDCZXBqkAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTEyLTI4VDA4OjM1OjA0LTA1OjAw6AGiGAAAAABJRU5ErkJggg=='
+  />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <%= htmlWebpackPlugin.options.scripts %>
+    <script id="__HELMET_TAGS__"></script>
+    <link id="__DYNAMIC_STYLES__">
+    <style>
+      body {
+        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
+      }
+
+      body>#root {
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.25s;
+        transform: none;
+      }
+
+      .softLanding {
+        transition: none;
+        opacity: 0;
+      }
+
+      .softLanding>#root {
+        transition: none;
+        transition-delay: 0.25s;
+        transform: scale(0.995);
+      }
+    </style>
+    <noscript>
+      <style>
+        body {
+          overflow-y: auto !important;
+        }
+
+        body.softLanding {
+          -webkit-transition: none !important;
+          -o-transition: none !important;
+          transition: none !important;
+          opacity: 1 !important;
+        }
+
+        .softLanding>#root {
+          -webkit-transition: none !important;
+          -o-transition: none !important;
+          transition: none !important;
+          -webkit-transition-delay: inherit !important;
+          -o-transition-delay: inherit !important;
+          transition-delay: inherit !important;
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+          transform: none !important;
+          -webkit-box-shadow: none !important;
+        }
+      </style>
+    </noscript>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script async src="https://apis.google.com/js/api:client.js"></script>
+  <script id="__APOLLO_STATE__"></script>
+  <script id="__i18n_STATE__"></script>
+</body>
+<script id="__MANIFEST__"></script>
+<script id="__DYNAMIC_SCRIPTS__"></script>
+<script id="__MAIN__"></script>
+
+</html>

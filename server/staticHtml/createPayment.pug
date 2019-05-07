@@ -1,0 +1,189 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title='Discover Wonderful Asian Tours, Trips &amp; Shows - Book with The Asia'
+    meta(data-react-helmet="true" content="noindex, nofollow" name="robots")
+    link(href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet")
+    link(rel='icon' type='image/png' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEX///9NrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIdNrIf///9iJ2suAAAAEHRSTlMBEWGv779xIZ9Rgc8x30GPhZGg6gAAAAFiS0dEAIgFHUgAAAAHdElNRQfhDBwIIwR5JIVhAAABQElEQVQ4y61T2Y6EMAxLD0qhtOT/v3Ydt2VgZ6R52I2EOOwkdhpE/i2cD1ERcUnrJzjrLfIbZbPksBvog5XxT9yQ3UkiQdwOev6FlwP3qnnRgoe14EtFodBYH2+u35tdeDwvOejlYseF2agiW+1YS1WjCPRbfVlJhw5TmVs0GYeqOOijkmxsq6e6HBS2SgMBKWwAxIheRwLeE8AoQQMLJMuQPISxYqEiI0r3KA7tS3dKU948dV/06IoNaDg1gVUXmQTkdbzXsrBubRLgMQFnN081JJwyCRBXpjroP0cL80eRdK/zCE+Njqo4QNrkOe7z8PpM83DDQdnwbwcctPZBsSNStyduE277kDr1lccGVS3xSqHAfuBX2InEazE3HcN6xXrzdFu5F17el9KWdvZ8W9q59qkhPq799x9Hvv56f4gfOrMV3dgcdDMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMTItMjhUMDg6MzU6MDQtMDU6MDCZXBqkAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTEyLTI4VDA4OjM1OjA0LTA1OjAw6AGiGAAAAABJRU5ErkJggg==')
+    script(type='text/javascript', src="https://code.jquery.com/jquery-1.12.4.min.js")
+    script(type='text/javascript', src="https://cdn.iamport.kr/js/iamport.payment-1.1.7.js")
+    script.
+      function createPayment() {
+        console.log("#{refId}");
+        IMP.init('imp28345267');
+        IMP.request_pay({
+          merchant_uid: "#{refId}",
+          amount : "#{amount}",
+          name : "#{tourName}",
+          buyer_name : "#{firstname}:#{lastname}",
+          buyer_tel : "#{phone}",
+          popup: true,
+          m_redirect_url: "#{m_redirect_url}",
+        }, function(rsp) {
+          var successFlag = false
+          var statusCode = 200
+          if ( rsp.success ) {
+            successFlag = true
+            statusCode = 200
+          } else {
+            successFlag = false
+            statusCode = 500
+
+          }
+          var data = {
+              theasia : 'better than now',
+              id : 'iamport',
+              status: statusCode,
+              success: successFlag,
+              book: "#{bookingId}",
+              //- payment: _payment,
+              //- customer: customer,
+              origin: rsp
+          };
+          try {
+            window.opener.postMessage(data, "*");
+            if (statusCode === 200) {
+              setTimeout(function () {
+                document.getElementById("please-wait-card").style.display = 'none';
+                document.getElementById("success-card").style.display = 'block';
+              }, 10000)
+            }
+          } catch (e) {
+            console.log('catch exception from payment error in Iamport : ' + e);
+          }
+          alert(msg);
+        })
+      }
+    style.
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .please_wait_page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        color: #4cac87;
+      }
+
+      .please_wait_page>.lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        width: 64px;
+        height: 64px;
+      }
+
+      .please_wait_page>.lds-ellipsis div {
+        position: absolute;
+        top: 27px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #4cac87;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+
+      .please_wait_page>.lds-ellipsis div:nth-child(1) {
+        left: 6px;
+        animation: lds-ellipsis1 0.6s infinite;
+      }
+
+      .please_wait_page>.lds-ellipsis div:nth-child(2) {
+        left: 6px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+
+      .please_wait_page>.lds-ellipsis div:nth-child(3) {
+        left: 26px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+
+      .please_wait_page>.lds-ellipsis div:nth-child(4) {
+        left: 45px;
+        animation: lds-ellipsis3 0.6s infinite;
+      }
+
+      .wrapper-image-logo{
+          text-align: center;
+          margin-top: 7em;
+          margin-bottom: 1em;
+        }
+        .wrapper-image-logo svg.logo-image{
+          width: 150px; 
+          fill:#4cac87;
+        }
+        .wrapper-success-content{
+          text-align: center;
+          margin-bottom: 2em;
+        }
+        .wrapper-success-content p{
+          width: 80%;
+          margin: auto;
+        }
+        .wrapper-success-content h2{
+          color:#4cac87;
+        }
+        #success-card{
+          display:none;
+        }
+
+      @keyframes lds-ellipsis1 {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes lds-ellipsis3 {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
+      }
+
+      @keyframes lds-ellipsis2 {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(19px, 0);
+        }
+      }
+  body(onload='createPayment()')
+    div(id="success-card" class="wrapper-success-card")
+      div(class="wrapper-image-logo")
+        svg(class="logo-image"
+            data-name="Layer 1"
+            id="Layer_2"
+            viewBox="0 0 38.8 33.91"
+            width="100px"
+            xmlns="http://www.w3.org/2000/svg")
+          path(d="M33.81,20.22c.68-.85,6.6-8.36,4.57-12.62C37.54,5.85,35.66,5,32.8,5a11.54,11.54,0,0,0-3.21.49A16.91,16.91,0,0,0,17.15,0h-.23A17,17,0,1,0,33.78,20.24ZM10.7,19.46,17.07,4.59,19.81,11A86.91,86.91,0,0,0,10.7,19.46ZM22,9.33,19.27,2.86A14.21,14.21,0,0,1,26.83,6.5,32.58,32.58,0,0,0,22,9.33ZM5.39,25A14.25,14.25,0,0,1,14.87,2.88ZM20.91,13.54l5.9,13.77a.36.36,0,0,0,0,.09,14.25,14.25,0,0,1-19.46-.06A104.07,104.07,0,0,1,20.91,13.54Zm2.2-1.7A27.74,27.74,0,0,1,28.69,8.6a14.19,14.19,0,0,1,.12,16.54ZM31.4,7.78a8.58,8.58,0,0,1,1.4-.13c1.73,0,2.79.38,3.14,1.11.62,1.29-.47,4-1.93,6.42A16.76,16.76,0,0,0,31.4,7.78Z")
+      div(class="wrapper-success-content")
+        h2='Thank you!'
+        p='Your payment is complete and you will recieve a confirmation email from us shortly.'
+    div(id="please-wait-card" class="please_wait_page")
+      h1='Please wait...'
+      div(class="lds-ellipsis")
+        div
+        div
+        div
+        div
+      
+

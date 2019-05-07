@@ -1,0 +1,38 @@
+@import '../../../../style/colors.less';
+
+:local {
+  .more_information {
+    // padding: 25px 0px;
+    font-size: 16px;
+
+    > div {
+      > .title {
+        color: @black;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      > .content {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        > span {
+          display: block;
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .content_thumbnail {
+      margin: 40px 0;
+
+      img {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
+}

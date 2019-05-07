@@ -1,0 +1,28 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "../main";
+
+:local{
+  .carousal{
+    display: block;
+    &.active-current{
+      :global(.slick-slide){
+        &>div{
+          margin-left: 240px;
+          margin-right: -240px;
+          transform: scaleY(0.9);
+          width:240px;
+          .transition-content();
+        }
+      }
+      :global(.slick-slide.slick-active.slick-current){
+        &>div{
+          margin: 20px -220px 0 20px;
+          padding: 0;
+          transform: scale(1);
+          width: 480px;
+        }
+      }
+    }
+  }
+}

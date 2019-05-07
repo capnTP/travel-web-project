@@ -1,0 +1,79 @@
+@import '../../../../style/break_points.less';
+@import '../../../../style/colors.less';
+
+:local {
+  .toggles {
+    background-color: @white;
+    width: 100%;
+
+    > .tool_bar {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > .title {
+        color: @textPrimary;
+        display: block;
+      }
+
+      > .clear {
+        background-color: white;
+        border: none;
+        color: @secondary;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+      }
+
+      > .collapse_toggle {
+        flex: 1 1 100%;
+        padding: 1em 0;
+
+        > button {
+          align-items: center;
+          background-color: white;
+          border: none;
+          color: @secondary;
+          cursor: pointer;
+          display: flex;
+          font-size: 16px;
+          margin: 0;
+          padding: 4px 8px 8px 0;
+
+          > .text {
+            margin: 0 1em 0 0;
+            text-decoration: underline;
+          }
+
+          > .icon {
+            transition: transform .5s;
+          }
+        }
+
+        &.collapse {
+          > button {
+            > .icon {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+
+    > .toggle {
+      font-size: 1em;
+      margin: 0 1em 0.5em 0;
+    }
+
+    @media @for-phone, @for-min-phone {
+      font-size: 12px;
+
+      >.toggle{
+        min-width: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+query ProductQuery($slug: String!) {
+  tourBySlug(slug: $slug) {
+    id
+
+    city {
+      id
+      slug
+      name
+      country
+    }
+    currency {
+      id
+      code
+      exchangeRate
+    }
+    currentDate
+
+    images {
+      id
+      raw
+      small
+      thumb
+      alt
+      description
+    }
+    includes {
+      icon
+      text
+    }
+    information {
+      head
+      body
+    }
+    isPublished
+    isDiscounted
+
+    descriptionHeader
+    details {
+      name
+      text
+    }
+
+    excludes {
+      icon
+      text
+    }
+
+    featureType
+
+    highlights
+
+    latestMinimumPrice
+    locations {
+      title
+      description
+      latitude
+      longitude
+    }
+    longDescription
+
+    rating
+    reviews {
+      reviewerName
+      reviewTitle
+      reviewDescription
+      nationalityFlag
+      rating
+      createdAt
+    }
+
+    seo {
+      title
+      description
+      keywords
+      schema
+    }
+    shortDescription
+
+    title
+    tourType
+    travellerRequirement {
+      minimumAdultAge
+      minimumChildAge
+      minimumChildHeight
+    }
+  }
+
+  tourLanguages(slug: $slug)
+}

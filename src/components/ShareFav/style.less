@@ -1,0 +1,46 @@
+@import '../../style/main.less';
+:local {
+  .share_fav_container {
+    display: flex;
+    flex-direction: column;
+    min-width: 50px;
+    padding: 19px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 5;
+    &.horizontal {
+      align-items: center;
+      bottom: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 14px;
+      top: unset;
+      > .icon_span {
+        margin: 0 5px;
+        // color: @borderline;
+        &.favorite {
+          order: 2;
+        }
+        &.share {
+          order: 1;
+        }
+      }
+    }
+    > .icon_span {
+      color: @white;
+      cursor: pointer;
+      margin-bottom: 10px;
+      &.favorite {
+        font-size: 32px;
+      }
+      &.isFavorite {
+        color: @orange;
+      }
+      &.share {
+        font-size: 22px;
+      }
+    }
+  }
+}

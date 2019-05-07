@@ -1,0 +1,45 @@
+@import '../../../style/colors.less';
+
+:local {
+  label.InputGroup {
+    display: inline-block;
+
+    margin: 0 0 0.5em 0;
+
+    > * {
+      display: block;
+    }
+
+    > input,
+    textarea,
+    select {
+      margin: 0.5em 0 0 0;
+    }
+
+    > .error_message {
+
+      color: @danger;
+      font-size: 0.8em;
+
+      margin: 0.3em 0 0 0;
+
+      visibility: hidden;
+    }
+
+    &.has-error {
+      color: @danger;
+
+      > .error_message {
+        visibility: visible;
+      }
+    }
+
+    &.is-full-width {
+      width: 100%;
+
+      > * {
+        width: 100%;
+      }
+    }
+  }
+}

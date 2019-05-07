@@ -1,0 +1,118 @@
+@import '../../../style/colors.less';
+@import '../../../style/break_points.less';
+
+:local {
+  .filter_toggle {
+    border: solid 1px rgba(54, 52, 54, 0.2);
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    min-width: 240px;
+    overflow: hidden;
+    position: relative;
+    width: 240px;
+
+    &.loading {
+      border: none;
+      display: block;
+    }
+
+    &.active {
+      border: solid 2px black;
+    }
+
+    > .img_container {
+      align-items: center;
+      display: flex;
+      height: 60px;
+      justify-content: center;
+      position: relative;
+      width: 80px;
+
+      &.active {
+        &::after {
+          background-image: linear-gradient(rgba(0, 43, 70, 0.8), rgba(8, 23, 33, 0.8));
+          color: @white;
+          content: '\e9bb';
+          font-family: 'theasia';
+          font-size: 36px;
+          line-height: 80px;
+          position: absolute;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      > img {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      > .icon {
+        color: white;
+        font-size: 2em;
+        z-index: 1;
+      }
+
+      > .img_wrapper {
+        background: #48a583;
+        background-image: linear-gradient(#2e556d, #2e556d);
+        font-size: 16px;
+        height: 60px;
+        opacity: 0.5;
+        position: absolute;
+        width: 80px;
+      }
+
+      > .correct_sign {
+        align-items: center;
+        color: white;
+        display: flex;
+        font-size: 20px;
+        height: 60px;
+        justify-content: center;
+        position: absolute;
+        width: 80px;
+      }
+    }
+
+    > img {
+      height: 60px;
+      width: 80px;
+    }
+
+    > .text_container {
+      align-items: flex-start;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+
+      > .title {
+        font-weight: bold;
+      }
+
+      > .subtitle {
+        font-size: 0.8em;
+      }
+    }
+
+    @media @for-phone, @for-min-phone {
+      font-size: 0.8em;
+      height: 40px;
+      min-width: 160px;
+      width: 160px;
+
+      > .img_container {
+        height: 40px;
+        width: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id":"contact",
+  "seo":{
+    "title":"문의하기 - 더아시아의 최고 목적지를 만나보세요",
+    "description":"아시아 어디에서든 더아시아는 여행의 조언과 도움을 제공합니다. 지금 문의하세요 - 더아시아"
+  },
+  "heading": {
+    "title": "문의하기"
+  },
+  "categories": [
+    {
+      "id":"amend_my_booking",
+      "name": "예약변경 요청",
+      "subject": "Amend Request for The Asia Booking-KR",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id":"check_status",
+      "name": "예약확인 요청",
+      "subject": "Check my Booking Status-KR",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id":"technical_issue",
+      "name": "기술적 문제 요청",
+      "subject": "Technical issue report-KR",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id":"general",
+      "name": "일반문의사항",
+      "subject": "General Inquiry-KR",
+      "email": "enservice@theasia.com"
+    }
+  ],
+  "content": {
+    "input": {
+      "firstName": {
+        "title": "이름",
+        "placeholder": "영문이름을 입력하세요"
+      },
+      "lastName": {
+        "title": "성",
+        "placeholder": "영문성을 입력하세요"
+      },
+      "email": {
+        "title": "이메일",
+        "placeholder": "이메일을 입력하세요"
+      },
+      "language": {
+        "title": "언어"
+      },
+      "bookingNumber": {
+        "title": "예약번호(옵션)",
+        "placeholder": "예약 번호"
+      },
+      "categories": {
+        "title": "요청사항"
+      },
+      "message": {
+        "title": "메시지",
+        "placeholder": "메시지를 입력하세요"
+      },
+      "send": "보내기"
+    },
+    "infoBox": {
+      "heading": "영업시간",
+      "days": "월요일 - 금요일",
+      "time": "9:00 - 18:00 (GMT+7)",
+      "userTime": "你的时间",
+      "userTimeConvert": "转换为你的时间",
+      "finalDays": "星期天到星期五",
+      "finalTime": "9:00至18:00（GMT + 7)"
+    }
+  }
+}

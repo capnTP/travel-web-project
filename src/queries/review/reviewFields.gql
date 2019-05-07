@@ -1,0 +1,47 @@
+fragment reviewFields on Review {
+  id
+  created_at
+  updated_at
+
+  booking {
+    id
+
+    booking_no
+
+    subTour {
+      id
+      name
+    }
+
+    tour {
+      id
+
+      name
+      tourMedias {
+        id
+        detail {
+          id
+          absoluteUrl
+        }
+      }
+    }
+  }
+  booking_id
+
+  group_size
+
+  language_id
+
+  rating
+  recommend
+  review
+  review_title
+  reviewer_name
+
+  status
+  sub_product_id
+
+  tour_id
+
+  user_id
+}

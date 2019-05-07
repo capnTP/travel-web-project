@@ -1,0 +1,76 @@
+{
+  "id": "contact",
+  "seo": {
+    "title": "联系我们-热亚洲旅行网收录的亚洲热门旅游目的地",
+    "description": "热亚洲旅行网的联系信息与留言板。欲了解更多亚洲城市周边一日游信息，或有任何意见反馈，请随时联系热亚洲"
+  },
+  "heading": {
+    "title": "联系我们"
+  },
+  "categories": [
+    {
+      "id":"amend_my_booking",
+      "name": "更改我的预订",
+      "subject": "Amend Request for The Asia Booking-CN",
+      "email": "cnservice@theasia.com"
+    },
+    {
+      "id":"check_status",
+      "name": "查看我的预订状态",
+      "subject": "Check my Booking Status-CN",
+      "email": "cnservice@theasia.com"
+    },
+    {
+      "id":"technical_issue",
+      "name": "技术问题",
+      "subject": "Technical issue report-CN",
+      "email": "cnservice@theasia.com"
+    },
+    {
+      "id":"general",
+      "name": "其他",
+      "subject": "General Inquiry-CN",
+      "email": "cnservice@theasia.com"
+    }
+  ],
+  "content": {
+    "input": {
+      "firstName": {
+        "title": "姓名",
+        "placeholder": "输入您的姓名"
+      },
+      "lastName": {
+        "title": "姓",
+        "placeholder": "输入您的姓"
+      },
+      "email": {
+        "title": "邮箱",
+        "placeholder": "输入您的邮箱"
+      },
+      "language": {
+        "title": "语言"
+      },
+      "bookingNumber": {
+        "title": "订单号码",
+        "placeholder": "键入预订号码"
+      },
+      "categories": {
+        "title": "类别"
+      },
+      "message": {
+        "title": "留言",
+        "placeholder": "输入信息内容"
+      },
+      "send": "发送"
+    },
+    "infoBox": {
+      "heading": "营业时间",
+      "days": "周一 - 周五",
+      "time": "9:00 - 18:00 (GMT+7)",
+      "userTime": "你的时间",
+      "userTimeConvert": "转换为你的时间",
+      "finalDays": "周日至周五",
+      "finalTime": "9:00至18:00（GMT + 7）"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "home",
+  "seo_title": "Theasia.com|周边一日游_自助游_在线旅游_旅游路线",
+  "seo_description":
+    "Theasia.com是一个针对亚洲热门旅游城市的在线旅游服务网站，提供城市周边一日游预定，自助游旅游线路规划，景点门票，景点图片和景点介绍。快到热亚洲预定你的行程吧！",
+  "title_tag": "感受真正的亚洲",
+  "experiences": "体验",
+  "learn more": "更多",
+  "share this": "与亲朋好友一起分享旅行体验！",
+  "whats on offer": "特别优惠！ ",
+  "we are lossing": "以最优的价格体验最棒的亚洲！",
+  "stay informed": "最新旅行资讯 ",
+  "about our latest": "通过电子杂志获取我们的最新促销资讯！",
+  "click here to signup": "点击此处注册",
+  "where to go": "去哪里玩？ ",
+  "our standout": "探索亚洲最精彩的旅行目的地！",
+  "see all": "查看全部",
+  "why book with": "为什么选择",
+  "learn more about us": "了解更多",
+  "what are they saying": "大家怎么说？ ",
+  "latest reviews": "查看最新评论",
+  "what is happenning": "你知道吗？",
+  "what is going on": "最原汁原味的旅行攻略，秘籍",
+  "continue reading": "继续阅读",
+  "read more": "阅读更多",
+  "experience description":
+    "我们的当地专家团队仔细评估每项行程、活动和景点，亲自体验我们提供的每一个产品，以确保为您提供高品质且真实的旅行体验。",
+  "booking description":
+    "TheAsia.com不仅是一个线上旅游预订平台。我们相信旅行的力量，你的品味，你的视野，你的兴趣，或是你的梦想-我们拥有你所需要的一切。亚洲是我们的家，欢迎你和我们在此共同定义你的旅行。无需等待，即刻开启你的全新亚洲旅行体验。",
+  "booking description bottom left":
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "booking description bottom right":
+    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "whats new": "最新资讯 ",
+  "discover our latest": "查看最新精选推荐行程",
+  "national-parks": {
+    "name": "自然 / 冒险活动",
+    "description": "体验刺激的户外活动"
+  },
+  "dinner2": {
+    "name": "美食 & 餐厅",
+    "description": "尽情享受亚洲美食"
+  },
+  "shows": {
+    "name": "演出 & 娱乐活动",
+    "description": "以艺术的形式深入体验本土文化"
+  },
+  "snorkeling": {
+    "name": "水上运动",
+    "description": "在浪花中尽情挥洒汗水"
+  },
+  "food-recipe2": {
+    "name": "烹饪课程",
+    "description": "跟当地人学习烹饪地道美食"
+  },
+  "guide2": {
+    "name": "当地导游",
+    "description": "当地向导让你的旅行变得更加轻松"
+  },
+  "driver2": {
+    "name": "接送服务",
+    "description": "快捷无忧的交通服务"
+  },
+  "search placeholder": "搜索目的地或当地玩乐"
+}

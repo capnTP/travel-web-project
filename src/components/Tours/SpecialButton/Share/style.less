@@ -1,0 +1,54 @@
+@import '../../../../style/main.less';
+
+:local {
+  .share {
+    display: inline-block;
+    div {
+      align-items: center;
+      display: inline-block;
+      width: 32px;
+      margin-left: 5px;
+      > div {
+        align-items: center;
+        display: grid;
+        height: 32px !important;
+        width: 32px !important;
+      }
+    }
+
+    svg {
+      height: 32px;
+      width: 32px;
+    }
+
+    .fbIcon {
+      color: @fb;
+      font-size: 32px;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: @fb;
+        border-radius: 2px;
+        box-shadow: 0 0 3px @secondary;
+        color: @white;
+      }
+    }
+
+    .twitterIcon {
+      color: @twitter;
+      font-size: 32px;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: @twitter;
+        box-shadow: 0 0 3px @secondary;
+        color: @white;
+      }
+    }
+
+    > span, svg {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  }
+}

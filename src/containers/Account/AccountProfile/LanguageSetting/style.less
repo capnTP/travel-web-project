@@ -1,0 +1,48 @@
+:local {
+  .language_and_currency_setting_component {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    > .title {
+      flex: 1 1 100%;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0 0 0.5em 0;
+    }
+
+    > .description {
+      margin: 0 0 1em 0;
+    }
+
+    > .input_group {
+      flex: 1 1 50%;
+      margin: 0 0 0.5em 0;
+
+      > .label {
+        margin: 0 0 0.5em 0;
+      }
+    }
+
+    > .action {
+      flex: 1 1 100%;
+      margin: 1em 0 0 0;
+    }
+
+    &.xs {
+      flex-direction: column;
+      padding: 1em;
+
+      > .input_group {
+        select {
+          width: 100%;
+        }
+      }
+
+      > .action {
+        margin: 1em 0;
+      }
+    }
+  }
+}

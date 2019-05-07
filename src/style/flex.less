@@ -1,0 +1,276 @@
+@for-min-phone: ~"screen and (max-width: 320px)"; // < 320
+@for-phone: ~"screen and (min-width: 321px) and (max-width: 44.9375rem)"; // < 720
+@for-tablet-only: ~"screen and (min-width: 45rem) and (max-width: 74.9375rem)"; // > 720 < 1199
+@for-tablet-portrait-only: ~"screen and (min-width: 45rem) and (max-width: 56.1875rem)"; // > 720 < 900
+@for-tablet-portrait-up: ~"screen and (min-width: 45rem)"; // > 720
+@for-tablet-landscape-up: ~"screen and (min-width: 56.25rem)"; // > 900
+@for-desktop-up: ~"screen and (min-width: 75rem)"; // > 1200
+@for-big-desktop-up: ~"screen and (min-width: 112.5rem)"; // > 1800
+.flex {
+  display: flex;
+
+  &_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &_row_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &_column_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &_nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &_wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_wrap_reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.grid {
+  &_1 {
+    flex: 0.1;
+  }
+
+  &_2 {
+    flex: 0.2;
+  }
+
+  &_3 {
+    flex: 0.3;
+  }
+
+  &_4 {
+    flex: 0.4;
+  }
+
+  &_45 {
+    flex: 0.45;
+  }
+
+  &_5 {
+    flex: 0.5;
+  }
+
+  &_6 {
+    flex: 0.6;
+  }
+
+  &_7 {
+    flex: 0.7;
+  }
+
+  &_8 {
+    flex: 0.8;
+  }
+
+  &_9 {
+    flex: 0.9;
+  }
+
+  &_10 {
+    flex: 1;
+  }
+}
+
+.order {
+  &_1 {
+    order: 10;
+  }
+
+  &_2 {
+    order: 20;
+  }
+
+  &_3 {
+    order: 30;
+  }
+
+  &_4 {
+    order: 40;
+  }
+
+  &_5 {
+    order: 50;
+  }
+
+  &_6 {
+    order: 60;
+  }
+
+  &_7 {
+    order: 70;
+  }
+
+  &_8 {
+    order: 80;
+  }
+
+  &_9 {
+    order: 90;
+  }
+
+  &_10 {
+    order: 100;
+  }
+}
+
+.justify {
+  &_center {
+    justify-content: center;
+  }
+
+  &_start {
+    justify-content: flex-start;
+  }
+
+  &_end {
+    justify-content: flex-end;
+  }
+
+  &_space_between {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &_space_around {
+    justify-content: space-around;
+  }
+
+  &_space_evenly {
+    justify-content: space-evenly;
+  }
+}
+
+.align {
+  &_items {
+    &_top {
+      align-items: flex-start;
+    }
+
+    &_bottom {
+      align-items: flex-end;
+    }
+
+    &_center {
+      align-items: center;
+    }
+
+    &_baseline {
+      align-items: baseline;
+    }
+
+    &_stretch {
+      align-items: stretch;
+    }
+  }
+
+  &_content {
+    &_start {
+      align-content: flex-start;
+    }
+
+    &_end {
+      align-content: flex-end;
+    }
+
+    &_center {
+      align-content: center;
+    }
+
+    &_stretch {
+      align-content: stretch;
+    }
+
+    &_space {
+      &_between {
+        align-content: space-between;
+      }
+
+      &_around {
+        align-content: space-around;
+      }
+    }
+  }
+}
+
+@media @for-phone, @for-min-phone {
+  .grid_m {
+    &_1 {
+      flex: 0.1;
+    }
+
+    &_2 {
+      flex: 0.2;
+    }
+
+    &_3 {
+      flex: 0.3;
+    }
+
+    &_4 {
+      flex: 0.4;
+    }
+
+    &_45 {
+      flex: 0.45;
+    }
+
+    &_5 {
+      flex: 0.5;
+    }
+
+    &_6 {
+      flex: 0.6;
+    }
+
+    &_7 {
+      flex: 0.7;
+    }
+
+    &_8 {
+      flex: 0.8;
+    }
+
+    &_9 {
+      flex: 0.9;
+    }
+
+    &_10 {
+      flex: 1;
+    }
+  }
+
+  .flex_m {
+    &_row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &_column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

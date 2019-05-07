@@ -1,0 +1,347 @@
+@import '../../style/colors.less';
+
+:global {
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}
+
+:local {
+  .button {
+    align-items: center;
+
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    border-width: 1px;
+    box-shadow: none;
+
+    color: #363636;
+
+    cursor: pointer;
+
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: center;
+    line-height: 1.5;
+
+    min-width: 100px;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+
+    &:hover,
+    &:active {
+      &:not(:disabled) {
+        border-color: #b5b5b5;
+        color: #363636;
+      }
+    }
+
+    &:focus {
+      border-color: #3273dc;
+      color: #363636;
+      outline: 0;
+
+      &:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+      }
+    }
+
+    &.is-loading {
+
+      color: transparent !important;
+      pointer-events: none;
+
+      &:after {
+
+        border: 2px solid #dbdbdb;
+        border-radius: 290486px;
+        border-right-color: transparent;
+        border-top-color: transparent;
+
+        box-sizing: inherit;
+
+        content: '';
+
+        display: block;
+        height: 1em;
+        left: calc(50% - (1em / 2));
+        position: absolute !important;
+        top: calc(50% - (1em / 2));
+        width: 1em;
+        :global {
+          -webkit-animation: spinAround 0.5s infinite linear;
+          animation: spinAround 0.5s infinite linear;
+        }
+      }
+    }
+
+    &.is-primary {
+      background-color: @primary;
+      border-color: transparent;
+      color: #fff;
+
+      @primary-active: #3f9071;
+
+      &:hover,
+      &:active {
+        &:not(:disabled) {
+          background-color: @primary-active;
+          border-color: transparent;
+          color: #fff;
+        }
+      }
+
+      &:focus {
+        border-color: transparent;
+        color: #fff;
+        outline: 0;
+
+        &:not(:active) {
+          box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+        }
+      }
+
+      &.is-outlined:not(:disabled) {
+        background-color: transparent;
+        border-color: @primary;
+        color: @primary;
+
+        &:hover,
+        &:active {
+          &:not(:disabled) {
+            background-color: @primary;
+            color: #fff;
+          }
+        }
+
+        &.is-loading {
+          &:after {
+            border: 2px solid @primary;
+            border-right-color: transparent;
+            border-top-color: transparent;
+          }
+        }
+      }
+
+      &.is-loading {
+        &:after {
+          border: 2px solid white;
+          border-right-color: transparent;
+          border-top-color: transparent;
+        }
+      }
+    }
+
+    &.is-secondary {
+      background-color: @secondary;
+      border-color: transparent;
+      color: #fff;
+
+      &:hover,
+      &:active {
+        &:not(:disabled) {
+          background-color: darken(@secondary, 20%);
+          border-color: transparent;
+          color: #fff;
+        }
+      }
+
+      &:focus {
+        border-color: transparent;
+        color: #fff;
+        outline: 0;
+
+        &:not(:active) {
+          box-shadow: 0 0 0 0.125em fade(@secondary, 30%);
+        }
+      }
+
+      &.is-outlined:not(:disabled) {
+        background-color: transparent;
+        border-color: @secondary;
+        color: @secondary;
+
+        &:hover,
+        &:active {
+          &:not(:disabled) {
+            background-color: @secondary;
+            color: #fff;
+          }
+        }
+
+        &.is-loading {
+          &:after {
+            border: 2px solid @secondary;
+            border-right-color: transparent;
+            border-top-color: transparent;
+          }
+        }
+      }
+
+      &.is-loading {
+        &:after {
+          border: 2px solid white;
+          border-right-color: transparent;
+          border-top-color: transparent;
+        }
+      }
+    }
+
+    &.is-danger {
+      background-color: @danger;
+      border-color: transparent;
+      color: #fff;
+
+      @danger-active: #bf2e3c;
+
+      &:hover,
+      &:active {
+        &:not(:disabled) {
+          background-color: @danger-active;
+          border-color: transparent;
+          color: #fff;
+        }
+      }
+
+      &:focus {
+        border-color: transparent;
+        color: #fff;
+        outline: 0;
+
+        &:not(:active) {
+          box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25);
+        }
+      }
+
+      &.is-outlined:not(:disabled) {
+        background-color: transparent;
+        border-color: @danger;
+        color: @danger;
+
+        &:hover,
+        &:active {
+          &:not(:disabled) {
+            background-color: @danger;
+            color: #fff;
+          }
+        }
+
+        &.is-loading {
+          &:after {
+            border: 2px solid @danger;
+            border-right-color: transparent;
+            border-top-color: transparent;
+          }
+        }
+      }
+
+      &.is-loading {
+        &:after {
+          border: 2px solid white;
+          border-right-color: transparent;
+          border-top-color: transparent;
+        }
+      }
+    }
+
+    &.is-warning {
+      background-color: @warning;
+      border-color: transparent;
+      color: #fff;
+
+      @warning-active: #e67a2e;
+
+      &:hover,
+      &:active {
+        &:not(:disabled) {
+          background-color: @warning-active;
+          border-color: transparent;
+          color: #fff;
+        }
+      }
+
+      &:focus {
+        border-color: transparent;
+        color: #fff;
+        outline: 0;
+
+        &:not(:active) {
+          box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25);
+        }
+      }
+
+      &.is-outlined:not(:disabled) {
+        background-color: transparent;
+        border-color: @warning;
+        color: @warning;
+
+        &:hover,
+        &:active {
+          &:not(:disabled) {
+            background-color: @warning;
+            color: #fff;
+          }
+        }
+
+        &.is-loading {
+          &:after {
+            border: 2px solid @warning;
+            border-right-color: transparent;
+            border-top-color: transparent;
+          }
+        }
+      }
+
+      &.is-loading {
+        &:after {
+          border: 2px solid white;
+          border-right-color: transparent;
+          border-top-color: transparent;
+        }
+      }
+    }
+
+    &.is-full-width {
+      width: 100% !important;
+    }
+
+    &.is-faded {
+      opacity: 0.5;
+    }
+
+    &.is-no-border.is-outlined:not(:disabled){
+      border-color: transparent;
+    }
+
+    &.is-no-border:not(:disabled) {
+      border-color: transparent;
+    }
+
+    &:disabled:not(.is-loading) {
+      background-color: #f5f5f5;
+      border-color: #d9d9d9;
+      box-shadow: none;
+
+      color: rgba(0, 0, 0, 0.25);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}

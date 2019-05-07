@@ -1,0 +1,23 @@
+{
+  "confirmPasswordInputLabel": "确认密码",
+  "confirmPasswordInputPlaceholder": "确认密码",
+  "emailInputLabel ": "邮箱地址",
+  "emailInputPlaceholder": "输入邮箱地址",
+  "errorBlank": "必填",
+  "errorEmailExists": "邮箱已存在",
+  "errorLoginFailed": "登陆失败",
+  "errorPasswordMismatch": "密码不符",
+  "facebookButtonText": "使用Facebook登录",
+  "forgotPassword": "忘记密码",
+  "googleButtonText": "使用谷歌登录",
+  "htmlTitle": "登录",
+  "loginButtonText": "登录",
+  "or": "或",
+  "passwordInputLabel": "密码",
+  "passwordInputPlaceholder": "输入密码",
+  "registerButtonText": "注册",
+  "registerLinkText": "创建帐号",
+  "registrationTitle": "创建新的账户",
+  "terms": "协议 & 条款",
+  "termsAcceptedAtInputLabel": "接受"
+}

@@ -1,0 +1,106 @@
+query discover($input: DiscoverInput!, $page: Int) {
+  discover(input: $input, page: $page) {
+    language {
+      id
+      code
+    }
+    city {
+      id
+
+      country
+      description
+      image
+      localizations {
+        id
+
+        description
+        languageId
+        name
+      }
+      name
+      ratings
+      slug
+      timezone
+    }
+
+    language {
+      id
+      code
+    }
+
+    toursCount
+    tours {
+      id
+      slug
+      startingPrice
+      cityId
+      city
+      rating
+      discount
+      name
+      image {
+        raw
+        thumb
+        alt
+      }
+      sortDescription
+      seo {
+        title
+        description
+      }
+      features
+    }
+    promotions {
+      id
+      slug
+      startingPrice
+      cityId
+      city
+      rating
+      discount
+      name
+      image {
+        raw
+        thumb
+        alt
+      }
+      sortDescription
+      seo {
+        title
+        description
+      }
+      features
+    }
+    recommended {
+      id
+      slug
+      startingPrice
+      cityId
+      city
+      rating
+      discount
+      name
+      image {
+        raw
+        thumb
+        alt
+      }
+      sortDescription
+      seo {
+        title
+        description
+      }
+      features
+    }
+    city{
+      id
+      slug
+      name
+      country
+      description
+      ratings
+      timezone
+      image
+    }
+  }
+}

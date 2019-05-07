@@ -1,0 +1,23 @@
+{
+  "confirmPasswordInputLabel": "Confirm Password",
+  "confirmPasswordInputPlaceholder": "Confirm Password",
+  "emailInputLabel": "Email Address",
+  "emailInputPlaceholder": "Enter your email address",
+  "errorBlank": "can't be blank",
+  "errorEmailExists": "Email already exists",
+  "errorLoginFailed": "Login failed",
+  "errorPasswordMismatch": "Password mismatch",
+  "facebookButtonText": "Login using Facebook",
+  "forgotPassword": "Forgotten Password",
+  "googleButtonText": "Login using Google",
+  "htmlTitle": "Login",
+  "loginButtonText": "Login",
+  "or": "Or",
+  "passwordInputLabel": "Password",
+  "passwordInputPlaceholder": "Enter your password",
+  "registerButtonText": "Create Account",
+  "registrationTitle": "Create a new account",
+  "registerLinkText": "Create Account",
+  "terms": "Terms & Conditions",
+  "termsAcceptedAtInputLabel": "I accept the"
+}

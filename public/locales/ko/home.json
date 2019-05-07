@@ -1,0 +1,67 @@
+{
+  "id": "home",
+  "seo_title":
+    "나만의 특별한 아시아 여행 | 현지 투어, 티켓 및 액티비티를 더아시아에서 예약하세요",
+  "seo_description":
+    "내가 만들어가는 아시아 여행! 가장 인기 있는 투어와 액티비티, 색다른 현지 체험까지 지금 더아시아에서 예약하세요!",
+  "title_tag": "나만의 특별한 아시아 여행",
+  "experiences": "Experiences",
+  "learn more": "더보기",
+  "share this": "친구들과 함께 공유하세요!",
+  "whats on offer": "스페셜 오퍼! ",
+  "we are lossing": "특별 할인가로 여행하세요",
+  "stay informed": "최신 여행 정보 ",
+  "about our latest":
+    "뉴스레터로 더아시아의 최신 프로모션, 상품 및 이벤트 정보를 받아보세요",
+  "click here to signup": "회원가입은 여기를 눌러주세요",
+  "where to go": "어디로 갈까요? ",
+  "our standout": "아시아의 가장 멋진 여행지를 둘러보세요",
+  "see all": "전체 보기",
+  "why book with": "Why book with",
+  "learn more about us": "더보기",
+  "what are they saying": "생생한 여행 후기",
+  "latest reviews": "최신 여행 리뷰를 살펴보세요",
+  "what is happenning": "핫한 여행 정보 ",
+  "what is going on": "여행 꿀팁, 다양한 현지 정보를 알려드려요",
+  "continue reading": "자세히 보기",
+  "read more": "더보기",
+  "experience description":
+    "지역 전문가가 엄선한 아시아 인기 여행지의 현지 투어 및 액티비티 등 관심 분야에 맞는 다양한 여행을 선사합니다. 더아시아와 함께 나만의 특별한 아시아 여행을 즐겨보세요.",
+  "booking description":
+    "더아시아는 아시아 인기 여행지의 현지 투어와 액티비티 등을 쉽고 편리하게 예약할 수 있는 온라인 여행 플랫폼입니다. 현지 문화를 배우며 여행을 즐기고 휴가 계획을 스스로 세우는 분들을 위한 특별한 여행, 더아시아와 함께 잊지 못할 추억을 만들어보세요.",
+  "booking description bottom left":
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "booking description bottom right":
+    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "whats new": "New 여행 ",
+  "discover our latest": "현지 전문가의 최신 추천 여행을 확인해보세요",
+  "national-parks": {
+    "name": "자연 / 모험 액티비티",
+    "description": "자연 속으로 떠나는 특별한 모험의 시작"
+  },
+  "dinner2": {
+    "name": "푸드 & 레스토랑",
+    "description": "오감 만족 아시아 요리의 매력, 맛있는 여행"
+  },
+  "shows": {
+    "name": "공연 & 엔터테인먼트",
+    "description": "공연 예술을 직접 경험하는 현지 문화 체험"
+  },
+  "snorkeling": {
+    "name": "수상 스포츠",
+    "description": "물속을 넘나들며 즐기는 스릴만점 액티비티"
+  },
+  "food-recipe2": {
+    "name": "쿠킹 클래스",
+    "description": "현지에서 직접 배우는 나만의 요리 만들기"
+  },
+  "guide2": {
+    "name": "현지 가이드",
+    "description": "지역 전문가의 추천 팁과 함께하는 여행"
+  },
+  "driver2": {
+    "name": "이동 서비스",
+    "description": "공항에서 시작되는 논스톱 여행 서비스"
+  },
+  "search placeholder": "여행지 또는 액티비티를 검색하세요"
+}

@@ -1,0 +1,23 @@
+{
+  "confirmPasswordInputLabel": "ยืนยันรหัสผ่าน",
+  "confirmPasswordInputPlaceholder": "กรุณายืนยันรหัสผ่าน",
+  "emailInputLabel": "อีเมล",
+  "emailInputPlaceholder": "กรุณากรอกอีเมล",
+  "errorBlank": "ไม่สามารถเว้นช่องว่างได้",
+  "errorEmailExists": "อีเมลนี้ถูกใช้งานแล้ว",
+  "errorLoginFailed": "ไม่สามารถล็อกอินได้",
+  "errorPasswordMismatch": "รหัสผ่านไม่ตรงกัน",
+  "facebookButtonText": "ล็อกอินด้วยเฟสบุ๊ค",
+  "forgotPassword": "ลืมรหัสผ่าน",
+  "googleButtonText": "ล็อกอินด้วยกูเกิล",
+  "htmlTitle": "ล็อกอิน",
+  "loginButtonText": "ล็อกอิน",
+  "or": "หรือ",
+  "passwordInputLabel": "รหัสผ่าน",
+  "passwordInputPlaceholder": "กรุณากรอกรหัสผ่าน",
+  "registerButtonText": "สร้างบัญชีสมาชิก",
+  "registrationTitle": "สร้างบัญชีสมาชิกใหม่",
+  "registerLinkText": "สร้างบัญชีสมาชิกใหม่",
+  "terms": "ข้อตกลงและเงื่อนไข",
+  "termsAcceptedAtInputLabel": "ฉันยอมรับ"
+}

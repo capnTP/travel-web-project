@@ -1,0 +1,9 @@
+query weather($city: String!,$timezone: Int!){
+  weather(city: $city, timezone: $timezone){
+       id
+       icon
+       temperature
+       description
+       time
+   }
+}

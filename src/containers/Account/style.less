@@ -1,0 +1,163 @@
+@import "../../style/main.less";
+@import "../../style/definition.less";
+
+:global(body) {
+  height: unset;
+  padding: 0;
+}
+
+:local {
+  @header_height_for_desktop: 80px;
+  @header_height_for_phone: 45px;
+  @nav_height_for_mobile: 62px;
+
+  .Account {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: @header_height_for_desktop;
+    overflow-y: scroll;
+    position: relative;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    > nav {
+      @media only screen and (min-width: 992px) {
+        background: white;
+        -webkit-box-flex: 1;
+        color: rgba(54, 52, 54, 0.5);
+        -ms-flex: 1;
+        flex: 1;
+        margin-right: 20px;
+        margin-top: 5px;
+        min-width: 250px;
+
+        .sidebar_collapse {
+          margin: 30px 0;
+          padding-left: 40px;
+
+          > i {
+            color: #d6d1d1;
+            font-size: 12px;
+            margin-right: 20px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        > ul {
+          font-size: 16px;
+          list-style: none;
+
+          > li {
+            margin: 10px 0;
+            width: 100%;
+
+            > a {
+              align-items: center;
+              color: rgba(54, 52, 54, 0.5);
+              display: flex;
+              margin-right: 5px;
+              transition: all 1s ease;
+
+              &.active {
+                color: rgba(76, 172, 135, 1);
+                font-weight: bold;
+              }
+
+              > i {
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        background-color: white;
+        bottom: 0;
+        height: @nav_height_for_mobile;
+        left: 0;
+        margin: 0;
+        position: fixed;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+
+        > ul {
+          align-items: center;
+          box-shadow: 0 -2px 4px 0 rgba(54, 52, 54, 0.1);
+          display: flex;
+          height: 100%;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          position: relative;
+
+          > li {
+            display: inline-block;
+            flex: 1;
+            height: 100%;
+            position: relative;
+            text-align: center;
+
+            > a {
+              align-items: center;
+              display: flex;
+              font-size: 1.3em;
+              height: 100%;
+              justify-content: center;
+              padding: 0.5em;
+              width: 100%;
+
+              > .menu_icon {
+                margin: 0;
+              }
+
+              > .display_text {
+                font-size: 0;
+                transition: font-size 0.3s;
+              }
+
+              &.active {
+                color: rgba(76, 172, 135, 1);
+                font-weight: bold;
+
+                > .menu_icon {
+                  font-weight: bold;
+                  margin: 0 8px 0 0;
+                }
+
+                > .display_text {
+                  display: inline;
+                  font-size: 1em;
+                  font-weight: bold;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      margin-bottom: @nav_height_for_mobile;
+      position: relative;
+      width: 100%;
+    }
+
+    @media @for-phone, @for-min-phone {
+      margin-top: @header_height_for_phone;
+    }
+  }
+
+  :global(#lc_chat_layout) {
+    display: none;
+  }
+}

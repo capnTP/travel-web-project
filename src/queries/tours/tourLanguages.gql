@@ -1,0 +1,3 @@
+query tourLanguages($slug: String!){
+  tourLanguages(slug: $slug)
+}

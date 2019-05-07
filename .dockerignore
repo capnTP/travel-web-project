@@ -1,0 +1,46 @@
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+*.swo
+*.swp
+*.tgz
+*.xml
+.DS_Store
+.idea
+.build
+.project
+.strong-pm
+coverage
+downloads/vouchers
+npm-debug.log
+.admin.build
+yarn.lock
+.vscode
+TODO
+docker-compose.yml
+# Test coverage
+.nyc_output
+.nycrc
+# excluded because lots of packages are not needed on production
+node_modules
+# unit test files
+**/*.spec.js
+jest.config.js
+# integration test files
+cypress
+# dev-only or build-only files
+.git
+config
+flow-typed
+src
+.eslintignore
+.eslintrc.js
+.flowconfig
+.gitignore
+.storybook
+stories

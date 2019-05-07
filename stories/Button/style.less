@@ -1,0 +1,23 @@
+:local {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+      flex: 1 0 auto;
+      margin: 1em;
+    }
+
+    &.flex_column {
+      flex-direction: column;
+
+      > * {
+        margin: 0 0 1em 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

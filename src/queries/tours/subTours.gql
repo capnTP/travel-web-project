@@ -1,0 +1,86 @@
+mutation subTours($tourId: ID!, $currency: TourCurrencyInput) {
+  subTours(tourId: $tourId, currency: $currency) {
+    id
+    title
+    shortDescription
+    type
+    rating
+    details {
+      name
+      text
+    }
+    itinerary {
+      title
+      description
+      time {
+        from
+        to
+      }
+    }
+    locations {
+      title
+      description
+      latitude
+      longitude
+    }
+    checkoutInfo {
+      isPassportRequired
+      isPickupDetailRequired
+      isPickupTimeRequired
+      isFlightInfoRequired
+      isHotelNameRequired
+      isDropOffRequired
+    }
+    travellerRequirement {
+      minimumAdultAge
+      minimumChildAge
+      minimumChildHeight
+    }
+    cancellationPolicy {
+      id
+      name
+      description
+    }
+    priceInfo {
+      startDate
+      endDate
+      availabilityType
+      repeatOn
+      excludeDates
+      maximumPax
+      basePrice {
+        pax
+        walkIn {
+          adults
+          children
+          infants
+        }
+        selling {
+          adults
+          children
+          infants
+        }
+        exchange {
+          adults
+          children
+          infants
+        }
+      }
+    }
+    selectedTime {
+      time
+      location
+    }
+    pickupLocationTime {
+      time
+      location
+    }
+    reviews {
+      reviewerName
+      reviewTitle
+      reviewDescription
+      nationalityFlag
+      rating
+    }
+  }
+}

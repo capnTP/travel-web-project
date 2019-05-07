@@ -1,0 +1,12 @@
+query {
+  cities {
+    id
+    slug
+    name
+    country
+    countryId
+    image
+    description
+    ratings
+  }
+}

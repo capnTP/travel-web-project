@@ -1,0 +1,12 @@
+/*@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Prompt:300,600|Raleway:300,600&subset=korean,latin-ext,thai');*/
+
+/* chinese font family */
+
+
+/* chinese font family */
+
+@font-face {
+  font-family: 'Noto Sans Zh';
+  src: url('ZH/NotoSansCJ.ttf');
+  src: local('Noto Sans Zh'), local('NotoSansZh'), url('ZH/NotoSansCJ.ttf')
+}

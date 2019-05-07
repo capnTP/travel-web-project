@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "159804268192.dkr.ecr.ap-southeast-1.amazonaws.com/the-asia-web:<TAG>",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ],
+  "Volumes": [],
+  "Logging": "/var/log/nginx"
+}

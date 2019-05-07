@@ -1,0 +1,177 @@
+@import "colors.less";
+@import "flex.less";
+//buttons
+.btn {
+  background: @transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: @white;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+
+  &_asia {
+    background-color: @asia;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @asia;
+      color: @asia;
+    }
+  }
+
+  &_primary {
+    background-color: @primary;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @primary;
+      color: @primary;
+    }
+  }
+
+  &_secondary {
+    background-color: @secondary;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @secondary;
+      color: @secondary;
+    }
+  }
+
+  &_success {
+    background-color: @success;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @success;
+      color: @success;
+    }
+  }
+
+  &_warning {
+    background-color: @warning;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @warning;
+      color: @warning;
+    }
+  }
+
+  &_info {
+    background-color: @info;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @info;
+      color: @info;
+    }
+  }
+
+  &_light {
+    background-color: @light;
+    color: @black;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @light;
+      color: @light;
+    }
+  }
+
+  &_black {
+    background-color: @black;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @black;
+      color: @black;
+    }
+  }
+
+  &_white {
+    background-color: @white;
+    color: @black;
+
+    &:hover {
+      background-color: @black;
+      border: 1px solid @black;
+      color: @white;
+    }
+  }
+
+  &_transparent {
+    background-color: @transparent;
+    color: @black;
+  }
+
+  &_orange {
+    background-color: @orange;
+
+    &:hover {
+      background-color: @white;
+      border: 1px solid @orange;
+      color: @orange;
+    }
+  }
+  //bordered box
+  &_bordered {
+    &_asia {
+      border: 1px solid @asia;
+      color: @asia;
+
+      &:hover {
+        background-color: @asia;
+        color: @white;
+      }
+    }
+
+    &_primary {
+      border: 1px solid @primary;
+      color: @primary;
+    }
+
+    &_secondary {
+      border: 1px solid @secondary;
+      color: @secondary;
+    }
+
+    &_success {
+      border: 1px solid @success;
+      color: @success;
+    }
+
+    &_warning {
+      border: 1px solid @warning;
+      color: @warning;
+    }
+
+    &_info {
+      border: 1px solid @info;
+      color: @info;
+    }
+
+    &_light {
+      border: 1px solid @light;
+      color: @light;
+    }
+
+    &_black {
+      border: 1px solid @black;
+      color: @black;
+    }
+
+    &_white {
+      border: 1px solid @white;
+      color: @white;
+    }
+  }
+}
+
+@media @for-phone, @for-min-phone {
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../../style/main.less';
+
+:local {
+  .checkout_card {
+    background: @white;
+    border-radius: 3px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding: 20px 45px;
+
+    > .form {
+      border-bottom: 2px solid @underline;
+      border-top: 2px solid @underline;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 20px 0;
+
+      > .txt_label {
+        margin-bottom: 20px;
+      }
+
+      > .txtarea {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 20px;
+      }
+
+      > .form_group {
+        box-sizing: border-box;
+        display: grid;
+        grid-column-gap: 4%;
+        grid-template-columns: auto;
+        margin-bottom: 20px;
+
+        &.col_6 {
+          grid-template-columns: 48% 48%;
+        }
+
+        &.hide {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media @for-phone, @for-min-phone {
+    .checkout_card {
+      box-shadow: none;
+      box-sizing: border-box;
+      padding: 0;
+
+      > .form {
+        box-sizing: border-box;
+
+        > .form_group {
+          box-sizing: border-box;
+          display: grid;
+          grid-column-gap: 4%;
+          grid-template-columns: 100%;
+          margin-bottom: 10px;
+
+          > div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

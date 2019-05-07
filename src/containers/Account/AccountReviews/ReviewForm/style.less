@@ -1,0 +1,161 @@
+:local {
+  .ReviewForm {
+    background: white;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px 30px 0 30px;
+    width: 300px;
+
+    > * {
+      border-bottom: 1px solid rgba(199, 197, 197, 0.5);
+      padding: 1em 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    > .header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0 0 1em 0;
+
+      > .close_button {
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    > .content {
+      padding-bottom: 0;
+      padding-top: 15px;
+
+      .flex_card {
+        display: flex;
+        padding-bottom: 15px;
+
+        strong {
+          flex: 1;
+          text-align: right;
+        }
+      }
+
+      .recommend {
+        border-bottom: 1px solid rgba(199, 197, 197, 0.5);
+        border-top: 1px solid rgba(199, 197, 197, 0.5);
+        padding: 20px 0;
+
+        > .recommend_button_wrapper {
+          > button {
+            margin: 0 1em 0 0;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .ratings_wrapper {
+        align-items: center;
+        border-bottom: 1px solid rgba(199, 197, 197, 0.5);
+        display: flex;
+        padding: 1em 0;
+
+        > .ratings {
+          flex: 1;
+          text-align: right;
+
+          > button {
+            -webkit-appearance: none;
+            background: transparent;
+            border: 0;
+            color: black;
+            font-size: 22px;
+            margin-right: 5px;
+            padding: 10px;
+            padding-top: 5px;
+            width: 0;
+
+            &.active {
+              color: #ffc32c;
+            }
+          }
+        }
+      }
+
+      .title_wrapper {
+        padding: 15px 0;
+
+        .divider {
+          margin-bottom: 20px;
+        }
+
+        .title {
+          margin-bottom: 5px;
+        }
+
+        input {
+          border: solid 1px rgba(54, 52, 54, 0.2);
+          border-radius: 3px;
+          box-sizing: border-box;
+          padding: 6px 10px;
+          width: 100%;
+        }
+
+        textarea {
+          border: solid 1px rgba(54, 52, 54, 0.2);
+          border-radius: 3px;
+          box-sizing: border-box;
+          height: 100px;
+          padding: 6px 10px;
+          width: 100%;
+        }
+
+        .comment_txt {
+          font-style: italic;
+          margin-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .success_color {
+      color: #4cac87;
+    }
+
+    > .action {
+      > button.submit {
+        background-color: #4cac87;
+        border: solid 1px #4cac87 !important;
+        box-sizing: border-box;
+        color: #fff;
+        width: 100%;
+      }
+
+      > button.warning {
+        background: white;
+        border: 1px solid #f56c7a !important;
+        box-sizing: border-box;
+        color: #f56c7a;
+        font-weight: bold;
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .ReviewForm {
+      left: 0;
+      max-width: 100vw;
+      overflow-y: scroll;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}

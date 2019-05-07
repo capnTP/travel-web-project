@@ -1,0 +1,22 @@
+@import '../../../style/main.less';
+
+:local {
+  .checkout_card {
+    border-radius: 3px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    padding: 45px 45px;
+
+    .logo_image {
+      fill: @asia;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media @for-phone, @for-min-phone {
+    .checkout_card {
+      box-shadow: none;
+      padding: 50px 0;
+    }
+  }
+}

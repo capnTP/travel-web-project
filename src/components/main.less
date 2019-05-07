@@ -1,0 +1,27 @@
+@import "../style/main.less";
+
+:local(.list){
+  display: inline-block;
+  list-style: none;
+  margin:0;
+  padding:0;
+
+  &>li{
+    padding:5px 10px;
+
+    &>:local(.text_node){
+      margin-right:10px;
+    }
+  }
+}
+
+:local{@media only screen and (min-width: 320px) and (max-width: 480px) {
+    :local(.list){
+      background: red;
+
+      :local(.text_node){
+        background: yellow;
+      }
+    }
+
+  }}

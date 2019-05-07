@@ -1,0 +1,68 @@
+@import '../../../style/main.less';
+
+:local {
+  .error {
+    align-items: center;
+    background-color: @danger;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    min-height: 45px;
+    padding: 10px 20px;
+    width: 100%;
+
+    > span {
+      color: @white;
+      font-size: 16px;
+      // margin: 0 10px;
+    }
+
+    > a {
+      text-decoration: underline;
+    }
+
+    svg {
+      color: @white;
+      margin: 0 10px;
+    }
+
+    > button {
+      background-color: transparent;
+      border: none;
+      color: @white;
+      cursor: pointer;
+    }
+  }
+
+  .errorSlug {
+    background-color: @danger;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    min-height: 45px;
+    padding: 10px 20px;
+    width: 100%;
+
+    > span {
+      color: @white;
+      display: block;
+      font-size: 16px;
+    }
+
+    > a {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-decoration: underline;
+    }
+
+    svg {
+      color: @white;
+      margin: 0 10px;
+    }
+  }
+}

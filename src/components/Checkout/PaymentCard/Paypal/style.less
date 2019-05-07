@@ -1,0 +1,37 @@
+@import '../../../../style/main.less';
+
+:local {
+  .paypal_div {
+    box-sizing: border-box;
+    display: grid;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    // justify-content: center;
+    > .payment {
+      > span {
+        margin-right: 10px;
+
+        &[role="button"] {
+          cursor: pointer;
+        }
+
+        @media @for-phone {
+          display: block;
+          padding: 5px 0;
+
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    > .paypal {
+      box-sizing: border-box;
+      display: grid;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+}

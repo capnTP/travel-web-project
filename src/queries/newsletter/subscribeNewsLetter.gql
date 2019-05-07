@@ -1,0 +1,7 @@
+mutation subscribeNewsLetter($input: NewsLetter!) {
+  subscribeNewsLetter(input: $input) {
+    status
+    error
+    errorMessage
+  }
+}

@@ -1,0 +1,39 @@
+@white: #fff;
+
+:local {
+  .rating_container {
+    background-color: @white;
+    margin: 10px 0;
+    padding: 10px 20px;
+   
+    > ul {
+      list-style: none;
+      padding: 0;
+
+      > li {
+        padding: 5px 0;
+        
+        > .flex_row {
+          align-items: center;
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+
+          > .col_2 {
+            display: flex;
+            flex: 0.2;
+            justify-content: center;
+          }
+
+          > .col_6 {
+            flex: 0.6;
+          }
+        }
+      }
+    }
+
+    .txt_bold {
+      font-weight: bold;
+    }
+  }
+}

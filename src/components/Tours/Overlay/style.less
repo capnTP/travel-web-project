@@ -1,0 +1,48 @@
+@import '../../../style/main.less';
+
+:local {
+  .container {
+    background-color: @transparent;
+    bottom: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    > .header {
+      display: grid;
+      // grid-column: 100%;
+      // flex-direction: row;
+      justify-content: flex-end;
+
+      button {
+        background-color: @transparent;
+        border: none;
+        color: @black;
+        font-size: 24px;
+        outline: none;
+        padding: 20px 30px;
+      }
+    }
+
+    > .body {
+      // display: flex;
+      // flex-direction: column;
+      // padding: 20px;
+      // justify-content: space-between;
+      // overflow: auto;
+      height: 100%;
+    }
+  }
+
+  @media @for-phone, @for-min-phone {
+    .container {
+      background-color: @white;
+    }
+  }
+}

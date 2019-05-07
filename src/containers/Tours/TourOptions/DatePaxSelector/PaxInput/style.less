@@ -1,0 +1,163 @@
+@import '../../../../../style/main.less';
+
+:local {
+  .pax_input {
+    align-items: center;
+    background-color: #fff;
+    border: solid 1px rgba(54, 52, 54, 0.2);
+    border-radius: 3px;
+    display: flex;
+    grid-template-columns: auto 40px 40px 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    min-width: 290px;
+    overflow: hidden;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    > div {
+      height: 100%;
+
+      &.label_div {
+        align-items: center;
+        justify-content: flex-start;
+        line-height: 40px;
+        padding-left: 20px;
+        width: 70%;
+
+        > span {
+          cursor: pointer;
+
+          > span {
+            color: @darkblue;
+            margin-right: 2px;
+          }
+        }
+      }
+
+      &.button_minus {
+        display: inline-block;
+        height: 40px;
+        line-height: 45px;
+        width: 40px;
+      }
+
+      &.input_main {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+      }
+
+      &.button_plus {
+        display: inline-block;
+        height: 40px;
+        line-height: 45px;
+        width: 40px;
+      }
+
+      > span {
+        text-align: center;
+      }
+
+      > label {
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        font-size: 16px;
+        font-weight: bold;
+        justify-content: center;
+      }
+
+      > button {
+        background-color: @white;
+        border: none;
+        border-left: solid 1px rgba(54, 52, 54, 0.2);
+        color: #b7b7b7;
+        color: @asia;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 18px;
+        height: 100%;
+        outline: none;
+        transition: background-color 0.5s ease-out;
+        width: 100%;
+
+        &:hover {
+          background-color: #b7b7b7;
+          color: @white;
+        }
+      }
+
+      > input {
+        border: none;
+        border-left: solid 1px rgba(54, 52, 54, 0.2);
+        font-size: 16px;
+        height: 100%;
+        min-height: 40px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  @media @for-phone, @for-min-phone {
+    .pax_input {
+      border: none;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 25% 25% 25% 25%;
+      height: 100%;
+      min-width: 100%;
+
+      > .label_div {
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+        > span {
+          cursor: pointer;
+
+          > span {
+            color: @darkblue;
+            margin-right: 2px;
+          }
+        }
+      }
+
+      > div {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+
+        > input {
+          border-bottom: 1px solid @asia;
+          border-left: none;
+          border-right: none;
+          border-top: 1px solid @asia;
+          font-family: inherit;
+          height: 100%;
+          text-align: center;
+          width: 100%;
+        }
+
+        > button {
+          align-items: center;
+          border: none;
+          display: grid;
+          height: 100%;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+
+          > span {
+            color: @asia;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

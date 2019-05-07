@@ -1,0 +1,11 @@
+query {
+  countries {
+    id
+    name
+    # code
+    flag
+    currency
+    isoCode
+    countryCode
+  }
+}

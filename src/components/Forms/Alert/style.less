@@ -1,0 +1,47 @@
+@import '../../../style/main.less';
+
+:local {
+  .container {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    //grid-column-gap: 10px;
+    //grid-template-columns: 10% 85%;
+    height: 67px;
+    min-height: 67px;
+    padding-left: 20px !important;
+
+    span {
+      color: @white;
+    }
+    &>div{
+      &:first-child{
+        width: 10%;
+      }
+      &:last-child{
+        width: 85%;
+      }
+    }
+    @media @for-phone, @for-min-phone {
+      grid-template-columns: 10% 80%;
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+
+    > div {
+      &:first-child {
+        display: grid;
+        justify-content: center;
+
+        > .dollar {
+          color: @white;
+          font-size: 42px;
+
+          @media @for-phone, @for-min-phone {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}

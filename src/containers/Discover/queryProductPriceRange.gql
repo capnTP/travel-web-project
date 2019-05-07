@@ -1,0 +1,6 @@
+query {
+  productPriceRange {
+    high
+    low
+  }
+}

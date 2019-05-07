@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - APP_URL
+      - BASE_API_URL
+      - BLOG_URL
+      - GRAPHQL_URL
+      - IMGIX_URL
+      - LOGGING_LEVEL
+      - NODE_ENV
+      - SLACK_HOOK_URL

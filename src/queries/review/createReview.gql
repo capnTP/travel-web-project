@@ -1,0 +1,7 @@
+#import "./reviewFields.gql"
+
+mutation createReview($input: ReviewInput) {
+  createReview(input: $input) {
+    ...reviewFields
+  }
+}

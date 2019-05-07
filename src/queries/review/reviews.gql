@@ -1,0 +1,12 @@
+#import "./reviewFields.gql"
+
+query reviews(
+  $where: ReviewFilter
+  $limit: Int
+  $offset: Int
+  $order: String
+) {
+  reviews(where: $where, limit: $limit, offset: $offset, order: $order) {
+    ...reviewFields
+  }
+}

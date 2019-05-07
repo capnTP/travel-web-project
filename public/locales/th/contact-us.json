@@ -1,0 +1,76 @@
+{
+  "id": "contact",
+  "seo": {
+    "title": "ติดต่อเรา - ค้นหาสุดยอดสถานที่ท่องเที่ยวในเอเชีย - ดิ เอเชีย",
+    "description": "ไม่ว่าคุณกำลังวางแผนไปเที่ยวที่ไหน ดิ เอเชีย พร้อมให้คำปรึกษา ช่วยเหลือคุณขณะท่องเที่ยวในเอเชีย  ติดต่อเราได้แล้ววันนี้ - ดิ เอเชีย"
+  },
+  "heading": {
+    "title": "ติดต่อเรา"
+  },
+  "categories": [
+    {
+      "id":"amend_my_booking",
+      "name": "แก้ไขการจองของฉัน",
+      "subject": "Amend Request for The Asia Booking-TH",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id":"check_status",
+      "name": "ตรวจสอบสถานะการจองของฉัน",
+      "subject": "Check my Booking Status-TH",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id":"technical_issue",
+      "name": "ปัญหาทางเทคนิค",
+      "subject": "Technical issue report-TH",
+      "email": "enservice@theasia.com"
+    },
+    {
+      "id":"general",
+      "name": "ปัญหาทั่วไป",
+      "subject": "General Inquiry-TH",
+      "email": "enservice@theasia.com"
+    }
+  ],
+  "content": {
+    "input": {
+      "firstName": {
+        "title": "ชื่อ",
+        "placeholder": "กรุณากรอกชื่อ"
+      },
+      "lastName": {
+        "title": "นามสกุล",
+        "placeholder": "กรุณากรอกนามสกุล"
+      },
+      "email": {
+        "title": "อีเมล",
+        "placeholder": "กรุณากรอกอีเมล"
+      },
+      "language": {
+        "title": "ภาษา"
+      },
+      "bookingNumber": {
+        "title": "หมายเลขการจอง",
+        "placeholder": "พิมพ์หมายเลขจอง"
+      },
+      "categories": {
+        "title": "หมวดหมู่"
+      },
+      "message": {
+        "title": "ข้อความ",
+        "placeholder": "พิมพ์ข้อความของคุณ"
+      },
+      "send": "ส่ง"
+    },
+    "infoBox": {
+      "heading": "เวลาให้บริการ",
+      "days": "จ. - ศ.",
+      "time": "9:00 - 18:00 (GMT+7)",
+      "userTime": "เวลาของคุณ",
+      "userTimeConvert": "แปลงเวลาของคุณ",
+      "finalDays": "วันอาทิตย์ถึงวันศุกร์",
+      "finalTime": "9:00 ถึง 18:00 (GMT + 7)"
+    }
+  }
+}

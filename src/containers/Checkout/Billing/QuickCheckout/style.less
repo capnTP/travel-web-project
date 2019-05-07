@@ -1,0 +1,17 @@
+@import '../../../../style/main.less';
+
+:local {
+  .instruction {
+    padding: 22px 0;
+
+    > span {
+      color: @borderline;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    @media @for-phone, @for-min-phone {
+      display: none;
+    }
+  }
+}

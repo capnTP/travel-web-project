@@ -1,0 +1,127 @@
+@import '../../style/colors.less';
+
+:local {
+  .Checkbox {
+    align-items: center;
+    border-bottom: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 5px 0;
+    position: relative;
+    width: auto;
+
+    &:hover {
+      > input[type='checkbox'] {
+        &:checked ~ .check_icon {
+          &::after {
+            background-color: darken(@primary, 10%);
+          }
+        }
+      }
+
+      > .check_icon {
+        border: 1px solid @primary;
+      }
+    }
+
+    &.is-disabled {
+      cursor: not-allowed;
+
+      > input[type='checkbox'] {
+        &:checked ~ .check_icon {
+          color: rgba(0, 0, 0, 0.4);
+
+          &::after {
+            background-color: #f5f5f5;
+            border: 1px solid #d9d9d9 !important;
+          }
+        }
+      }
+
+      > .check_icon {
+        background-color: #f5f5f5;
+        border: 1px solid #d9d9d9 !important;
+        cursor: not-allowed;
+      }
+    }
+
+    &.has-error {
+      color: @danger;
+
+      > .check_icon {
+        border-color: @danger;
+      }
+    }
+
+    > input[type='checkbox'] {
+      opacity: 0;
+      position: absolute;
+      z-index: -2;
+
+      &:checked ~ span.check_icon {
+        border: none;
+        color: white;
+
+        &::after {
+          height: 28px;
+          opacity: 1;
+          width: 28px;
+        }
+
+        i {
+          margin-left: -9px;
+          margin-top: -9px;
+          opacity: 1;
+        }
+      }
+    }
+
+    > span.check_icon {
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+      box-sizing: border-box;
+      color: transparent;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 17px;
+      height: 20px;
+      margin-right: 5px;
+      overflow: hidden;
+      padding-left: 1px;
+      position: relative;
+      transition: all 0.3s 0s cubic-bezier(0.55, 0, 0.1, 1);
+      vertical-align: text-top;
+      width: 20px;
+      z-index: 1;
+
+      &::after {
+        background-color: @primary;
+        border: 1px solid white;
+        border-radius: 50%;
+        content: '';
+        height: 0;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s 0s cubic-bezier(0.55, 0, 0.1, 1);
+        -o-transition: all 0.3s 0s cubic-bezier(0.55, 0, 0.1, 1);
+        transition: all 0.3s 0s cubic-bezier(0.55, 0, 0.1, 1);
+        width: 0;
+        z-index: -1;
+      }
+
+      i {
+        display: inline-block;
+        margin-left: -10px;
+        margin-top: -10px;
+        opacity: 0;
+        position: absolute;
+      }
+    }
+  }
+}

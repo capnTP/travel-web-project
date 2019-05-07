@@ -1,0 +1,119 @@
+// @black: #000000;
+// @orange: #ff8733;
+@import '../../../../style/main.less';
+
+:local {
+  .breakdown {
+    background-color: @white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    min-width: 380px;
+    padding: 20px;
+
+    @media @for-phone, @for-min-phone {
+      box-shadow: none;
+      min-width: 100%;
+    }
+
+    > .header {
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      width: 100%;
+
+      > span {
+        color: @black;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      > button {
+        background-color: @transparent;
+        border: none;
+        color: @darkblue;
+        cursor: pointer;
+
+        @media @for-phone, @for-min-phone {
+          display: none;
+        }
+      }
+    }
+
+    > .date {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      width: 100%;
+
+      > span {
+        font-size: 16px;
+
+        &:last-child {
+          color: @black;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    > .content {
+      padding: 10px 0;
+    }
+
+    > .total {
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      width: 100%;
+
+      > span {
+        color: @black;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      > div {
+        > span {
+          color: @orange;
+          font-size: 12px;
+
+          &:last-child {
+            font-size: 32px;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+    > .checkout {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      width: 100%;
+
+      > button {
+        background-color: @asia;
+        border: none;
+        border-radius: 3px;
+        color: @white;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: bold;
+        height: 50px;
+        width: 100%;
+      }
+    }
+  }
+}

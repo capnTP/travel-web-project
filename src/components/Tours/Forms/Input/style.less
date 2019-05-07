@@ -1,0 +1,50 @@
+@import '../../../styles/main.less';
+
+:local {
+  .input_label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &.radio {
+      flex-direction: row;
+    }
+
+    .input {
+      border: 1px solid rgba(54, 52, 54, 0.2);
+      border-radius: 2px;
+      display: flex;
+      flex: 1;
+      padding: 10px;
+
+      &.margin_top {
+        margin-top: 5px;
+      }
+
+      &:focus {
+        border-radius: 2px;
+        outline: 2px solid @asia;
+      }
+    }
+
+    input[type="checkbox"] {
+      border: 1px solid @asia;
+      height: 20px;
+      left: 0;
+      top: 0;
+      width: 20px;
+
+      &::after {
+        content: '';
+        display: none;
+        position: absolute;
+      }
+    }
+  }
+
+  @media @for-phone, @for-min-phone {
+    .input_label {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "confirmPasswordInputLabel": "비밀번호 재입력",
+  "confirmPasswordInputPlaceholder": "비밀번호 재입력",
+  "emailInputLabel": "이메일 주소",
+  "emailInputPlaceholder": "이메일 주소를 입력해주세요",
+  "errorBlank": "필수 입력 항목",
+  "errorEmailExists": "사용중인 이메일입니다",
+  "errorLoginFailed": "로그인 실패",
+  "errorPasswordMismatch": "비밀번호가 일치하지 않습니다",
+  "facebookButtonText": "페이스북  계정으로 로그인",
+  "forgotPassword": "비밀번호 찾기",
+  "googleButtonText": "구글 계정으로 로그인",
+  "htmlTitle": "로그인",
+  "loginButtonText": "로그인",
+  "or": "또는",
+  "passwordInputLabel": "비밀번호",
+  "passwordInputPlaceholder": "비밀번호를 입력해주세요",
+  "registerButtonText": "회원등록",
+  "registrationTitle": "회원가입",
+  "registerLinkText": "회원가입",
+  "terms": "이용약관에 동의합니다",
+  "termsAcceptedAtInputLabel": ""
+}

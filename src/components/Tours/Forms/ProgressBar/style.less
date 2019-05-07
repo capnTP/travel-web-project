@@ -1,0 +1,20 @@
+:local {
+  .progress_container {
+    border: 1px solid #ffc03a;
+    border-radius: 20px;
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+
+    > .progress_bar {
+      background-image: linear-gradient(to left, #ffe271, #ffc03a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      transition: width 1s ease;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import '../../../style/main.less';
+
+:local {
+  .price_card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 30px 30px 30px;
+
+    .bordered_bottom {
+      border-bottom: 1px solid @underline;
+      padding: 20px 0;
+
+      &.tour {
+        padding: 30px 0 0 0 !important;
+      }
+
+      &.sub_tour {
+        padding: 0 !important;
+
+        span {
+          font-size: 18px !important;
+        }
+      }
+
+      > .date {
+        font-size: 18px;
+      }
+
+      .currency {
+        font-size: 12px;
+      }
+
+      .price {
+        font-size: 32px;
+      }
+
+      > .promotion_div {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: 75% 25%;
+      }
+
+      > .info {
+        align-items: center;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: auto auto;
+      }
+
+      &.tour_date {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        > span {
+          font-size: 16px;
+
+          &:first-child {
+            > span {
+              color: @darkblue;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .info_payment {
+      border: 1px solid @danger;
+      border-radius: 3px;
+      color: @danger;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 14px;
+    }
+
+    > .total_price {
+      align-items: center;
+      display: flex;
+      //grid-template-columns: auto auto;
+      justify-content: space-between;
+
+      > .total {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      > div {
+        > .currency {
+          color: @orange;
+          font-size: 12px;
+        }
+
+        .price {
+          color: @orange;
+          font-size: 32px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  @media @for-phone, @for-min-phone {
+    .price_card {
+      background: @white;
+      border: none;
+      box-shadow: none;
+      margin-top: 0;
+      padding: 10px 30px;
+    }
+  }
+
+  @media @for-tablet-only {
+    .price_card {
+      background: @white;
+      border: none;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+      padding: 10px 30px;
+    }
+  }
+}

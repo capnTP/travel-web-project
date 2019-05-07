@@ -1,0 +1,124 @@
+@import '../../../../style/colors.less';
+
+:local {
+  .hide {
+    display: none;
+  }
+
+  .direction {
+    font-size: 16px;
+    // padding: 25px 0px;
+    & > .direction_content {
+      // padding: 25px 0px;
+    }
+
+    .title {
+      font-size: 18px;
+    }
+
+    > .location_text {
+      color: @black;
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    > .direction_content {
+      // padding: 25px 0px;
+    }
+  }
+
+  .map {
+    overflow: hidden;
+    position: relative;
+
+    & > .direction_content {
+      // padding: 25px 0px;
+      & > .content {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        span {
+          padding: 10px 0;
+        }
+      }
+
+      & > ul {
+        list-style: none;
+        padding: 0;
+
+        & > li {
+          align-items: center;
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: 10% 90%;
+          justify-content: center;
+          margin-bottom: 20px;
+          min-height: 50px;
+
+          & > div {
+            & > span {
+              font-size: 16px !important;
+            }
+          }
+
+          &:nth-child(1) {
+            > div {
+              > .title {
+                color: #2e556d;
+                font-weight: bold;
+              }
+
+              > .icons {
+                color: #2e556d;
+                font-size: 32px !important;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            > div {
+              > .title {
+                color: #ffc03a;
+                font-weight: bold;
+              }
+
+              > .icons {
+                color: #ffc03a;
+                font-size: 32px !important;
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            > div {
+              > .title {
+                color: #4cac87;
+                font-weight: bold;
+              }
+
+              > .icons {
+                color: #4cac87;
+                font-size: 32px !important;
+              }
+            }
+          }
+
+          div {
+            &:first-child {
+              flex: 0.1;
+            }
+
+            &:last-child {
+              display: flex;
+              flex: 0.9;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

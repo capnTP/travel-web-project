@@ -1,0 +1,90 @@
+:local {
+  .AccountReviews {
+    .card_list_wrapper {
+      display: flex;
+      padding: 1em 0;
+
+      @media only screen and (max-width: 992px) {
+        margin: 0 0 70px 0;
+        margin-right: 0;
+        padding: 1em;
+        width: 100%;
+      }
+
+      > ul.card_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 69%;
+
+        @media only screen and (max-width: 992px) {
+          margin-right: 0;
+          width: 100%;
+        }
+
+        > li {
+          margin: 0 0 1em 0;
+          position: relative;
+
+          .loader_card {
+            height: 100px;
+
+            &.xs {
+              padding: 1em;
+            }
+          }
+        }
+
+        @media only screen and (max-width: 992px) {
+          .pending_wrapper {
+            > ul {
+              margin-right: 0;
+            }
+          }
+
+          li.booking_card {
+            flex-direction: column;
+
+            .img_wrapper {
+              margin-bottom: 10px;
+              margin-right: 0;
+
+              img {
+                height: 80px;
+                width: 100%;
+              }
+            }
+
+            .card_details {
+              .card_bottom {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+              }
+
+              .rating_no {
+                display: inline-block !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .no_wrap {
+    white-space: nowrap;
+  }
+}
+
+:global {
+  .Popover-tip {
+    fill: white;
+    -webkit-filter: drop-shadow(-1px 0 3px #ddd);
+    filter: drop-shadow(-1px 0 3px #ddd);
+  }
+
+  .Popover {
+    z-index: 2;
+  }
+}

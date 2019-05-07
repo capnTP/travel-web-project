@@ -1,0 +1,65 @@
+@import "../../style/break_points.less";
+
+:global(body) {
+  padding: 0 !important;
+}
+
+:global(.content_body) {
+  min-height: unset;
+}
+
+:local {
+  .reset_password_page {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 2em;
+
+    > .container {
+      border-radius: 3px;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+      display: flex;
+      max-width: 800px;
+      padding: 2em;
+
+      &.done,
+      &.error {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+        text-align: center;
+
+        > p {
+          margin: 0 0 2em 0;
+        }
+      }
+
+      > .description {
+        flex: 1;
+        margin-right: 1em;
+
+        > h2 {
+          margin-top: 0;
+        }
+      }
+
+      > .form {
+        flex: 1;
+      }
+    }
+
+    @media @for-phone {
+      margin: 50px 0;
+      padding: 0;
+
+      > .container {
+        box-shadow: unset;
+        flex-direction: column;
+
+        > .description {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

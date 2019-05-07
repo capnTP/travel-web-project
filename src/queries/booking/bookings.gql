@@ -1,0 +1,71 @@
+query bookings(
+  $where: BookingsFilter
+  $limit: Int
+  $offset: Int
+  $order: String
+) {
+  bookings(where: $where, limit: $limit, offset: $offset, order: $order) {
+    id
+    created_at
+    updated_at
+
+    adult_pax
+
+    bookingCurrencyCode
+    booking_no
+    booking_status_id
+
+    child_pax
+
+    infant_pax
+
+    passportNumber
+    pickupLocationTime
+    pickupPlace
+    pickupTime
+
+    specialRequest
+    subTour {
+      id
+      cancellationPolicy {
+        id
+        name
+        description
+      }
+      name
+    }
+    sub_product_id
+
+    total
+    tour {
+      id
+
+      name
+      tourMedias {
+        id
+        detail {
+          id
+          absoluteUrl
+        }
+      }
+    }
+    tour_id
+    trip_starts
+
+    user {
+      id
+
+      countryId
+      email
+      language_id
+      name
+      nationality {
+        id
+
+        name
+      }
+      phone
+    }
+    user_id
+  }
+}

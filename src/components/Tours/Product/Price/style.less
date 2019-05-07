@@ -1,0 +1,68 @@
+@white: #fff;
+@highlightColor: #ff5064;
+@lightGray: #b7c4ca;
+@import '../../../../style/main.less';
+
+:local {
+  .content {
+    display: none;
+  }
+
+  @media @for-phone, @for-min-phone {
+    .content {
+      align-items: center;
+      // padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      > span {
+        font-size: 20px;
+      }
+
+      > .price_content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        > span {
+          &:first-child {
+            color: @orange;
+            font-size: 14px;
+          }
+
+          &:nth-child(2) {
+            color: @orange;
+            font-size: 42px;
+            font-weight: 900;
+
+            > small {
+              font-size: 14px;
+              font-weight: normal;
+            }
+          }
+        }
+
+        > del {
+          color: @lightGray;
+          font-size: 14px;
+        }
+      }
+
+      > .view {
+        align-content: center;
+        display: flex;
+        justify-content: center;
+
+        > button {
+          background: transparent;
+          border: 1px solid #4bab86;
+          border-radius: 3px;
+          color: #4bab86;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+:local {
+  .css_404_wrapper {
+    background: url('https://sandbox-uploads.imgix.net/u/1518773984-2f852f038ce10a043fe0c5be8473e4ce');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    // .calc(height;100%;'-';60px);
+    // left: 0;
+    // right: 0;
+    // @media (max-width: 768px) {
+    //   .calc(height;100%;'-';90px);
+    // }
+    :global(.css_container) {
+      margin-top: 10%;
+    }
+
+    .flex_row {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 30px;
+
+      p {
+        color: #606770;
+        font-size: 18px;
+      }
+
+      span {
+        color: #4cac87;
+        font-size: 24px;
+        font-weight: bolder;
+      }
+    }
+
+    .banner_details_title {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 59px;
+      margin: 0;
+      margin-bottom: 50px;
+      text-align: center;
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+
+      span {
+        display: block;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: normal;
+
+        &:nth-child(2) {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        &:nth-child(3) {
+          font-size: 20px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

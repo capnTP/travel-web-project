@@ -1,0 +1,57 @@
+@import 'colors.less';
+@import 'flex.less';
+
+.alert {
+  border-radius: 3px;
+  padding: 20px;
+
+  &_main {
+    background-image: linear-gradient(to right, #4cac87, #4cdc87);
+    color: @white;
+  }
+
+  &_bordered {
+    &_asia {
+      border: 1px solid @asia;
+      color: @asia;
+    }
+
+    &_primary {
+      border: 1px solid @primary;
+    }
+
+    &_secondary {
+      border: 1px solid @secondary;
+    }
+
+    &_success {
+      border: 1px solid @success;
+    }
+
+    &_warning {
+      border: 1px solid @warning;
+    }
+
+    &_info {
+      border: 1px solid @info;
+    }
+
+    &_light {
+      border: 1px solid @light;
+    }
+
+    &_black {
+      border: 1px solid @black;
+    }
+
+    &_white {
+      border: 1px solid @white;
+    }
+  }
+}
+
+@media @for-phone, @for-min-phone {
+  .alert {
+    margin: 10px 0;
+  }
+}

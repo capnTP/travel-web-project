@@ -1,0 +1,45 @@
+@import '../../style/main.less';
+:local {
+  .social_icon_list {
+    list-style-type: none;
+    padding: 0;
+    > li {
+      display: inline;
+      > a {
+        background-color: @transparent;
+        margin-right: 15px;
+        text-decoration: none;
+        > span {
+          background-color: @transparent;
+          border-radius: 3px;
+          color: @white;
+          font-size: 22px;
+          padding: 5px;
+          &:hover {
+            background-color: @white;
+            color: @primary;
+            .transition-content();
+          }
+          &.color_primary {
+            color: @primary;
+          }
+          &.color_black {
+            color: @lightBlack;
+            opacity: 0.5;
+            &:hover {
+              background-color: @primary;
+              color: @white;
+              opacity: 1;
+            }
+          }
+          &.bg_white {
+            background-color: @white
+          }
+          &.bg_black {
+            background-color: @lightBlack
+          }
+        }
+      }
+    }
+  }
+}

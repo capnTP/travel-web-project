@@ -1,0 +1,171 @@
+@import "../style/main";
+@import '../style/var-header-height';
+
+body {
+  background-color: @white;
+  color: rgba(54, 52, 54, 0.8);
+  font-family: "Raleway", "Nanum Gothic", "Noto Sans", "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, serif;
+  font-family: "Raleway", "Noto Sans", "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, serif;
+  -webkit-font-feature-settings: "lnum" on;
+  -moz-font-feature-settings: "lnum" on;
+  -ms-font-feature-settings: "lnum" on;
+  font-feature-settings: "lnum" on;
+  font-size: 14px;
+  font-variant-numeric: lining-nums;
+  font-weight: 300;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: @textPrimary !important;
+}
+
+::selection {
+  background-color: @primary;
+  color: white;
+}
+
+html[lang="en"] {
+  body {
+    font-family: "Raleway", "Nanum Gothic", "Noto Sans", "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, serif !important;
+  }
+}
+
+html[lang="th"] {
+  body {
+    font-family: "Prompt", "Noto Sans", "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, serif !important;
+  }
+}
+
+html[lang="ko"] {
+  body {
+    font-family: "Nanum Gothic", "Noto Sans", "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, serif !important;
+  }
+}
+
+html[lang="zh"] {
+  body {
+    font-family: "Noto Sans Zh", "Noto Sans", "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, serif !important;
+  }
+}
+
+// Sticky footer
+html,
+body,
+#root {
+  margin: 0;
+}
+
+#root {
+  display: table;
+  height: 100%;
+  width: 100%;
+
+  @media @for-phone, @for-min-phone {
+    display: block;
+    height: auto;
+  }
+
+  & > nav:first-child {
+    + div {
+      flex: 1 0 auto;
+    }
+  }
+
+  & > footer {
+    flex-shrink: 0;
+  }
+}
+
+.content_body {
+  height: auto;
+  margin-top: @desktop-header-height;
+  min-height: 500px;
+
+  @media @for-phone, @for-min-phone {
+    display: block;
+    margin: 0;
+    margin-top: @mobile-header-height;
+    max-width: 100%;
+    min-height: 500px;
+  }
+}
+
+.padding {
+  padding-top: 90px;
+}
+
+a {
+  color: rgba(54, 52, 54, 0.8);
+  text-decoration: none;
+
+  &:hover {
+    color: @black;
+  }
+}
+
+h1 {
+  color: rgba(54, 52, 54, 1) !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+}
+
+h2,
+h3 {
+  color: rgba(54, 52, 54, 1) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+h4 {
+  color: rgba(54, 52, 54, 1) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+span {
+  font-weight: 300;
+}
+
+div[role="button"] {
+  cursor: pointer;
+  outline: none;
+}
+
+.main_container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.form_group {
+  margin-top: 25px;
+}
+
+.btn_group {
+  margin-top: 25px;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+@media @for-phone, @for-min-phone {
+  .form_group {
+    margin-top: 0;
+  }
+
+  .btn_group {
+    margin: 20px 0;
+  }
+}

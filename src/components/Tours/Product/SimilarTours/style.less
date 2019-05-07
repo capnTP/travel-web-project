@@ -1,0 +1,158 @@
+@import '../../../../style/colors.less';
+@columns: 12;
+// https://gist.github.com/markhowellsmead/9084c509fcfd4b829f98d72b8bd88b3e
+@for-desktop-up: ~"screen and (min-width: 75rem)"; // > 1200
+:local {
+  .product_page {
+    * {
+      box-sizing: border-box;
+    }
+
+    .content {
+      background-color: @white;
+      padding-bottom: 70px;
+      scroll-behavior: smooth;
+
+      > .info {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(@columns, 1fr);
+
+        @media @for-desktop-up {
+          padding: 0 130px;
+        }
+
+        > [role='main'] {
+          display: flex;
+          flex: 0.7;
+          flex-direction: column;
+          grid-column: span 8;
+          margin: 30px 0;
+        }
+
+        > aside {
+          grid-column: span 4;
+          margin: 30px 0;
+          overflow: hidden;
+          position: relative;
+
+          > .special_offer {
+            align-items: center;
+            background-color: #ff5064;
+            border-radius: 3px;
+            color: white;
+            display: flex;
+            font-weight: bold;
+            height: 50px;
+            justify-content: center;
+            letter-spacing: 1px;
+            margin: 2px;
+            width: 100%;
+          }
+
+          > .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1em 0;
+            padding: 2px 0;
+
+            * {
+              box-sizing: border-box;
+            }
+
+            > div {
+              border-left: 2px solid transparent;
+              border-right: 2px solid transparent;
+              flex-grow: 1;
+
+              > img {
+                height: 189px;
+                max-width: 100%;
+                min-width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+
+          > .review_card {
+            border-bottom: 1px solid gray;
+            margin: 20px 0;
+            padding-bottom: 20px;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .review_header {
+              > div {
+                > span {
+                  &.review_name {
+                    margin-left: 10px;
+                  }
+                }
+              }
+
+              .rating > {
+                margin-top: 10px;
+              }
+            }
+
+            .review_body > {
+              margin-top: 20px;
+
+              > span {
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .flex_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px;
+
+      > .row_6 {
+        display: flex;
+        flex: 0.6;
+
+        &:last-child {
+          align-items: flex-end;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    .overlay_calendar {
+      margin-bottom: 20px;
+    }
+
+    .select_container {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
+
+    .confirm_container {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+
+      > button {
+        background-image: linear-gradient(to right, #4cac87, #67deb0);
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        padding: 10px;
+        width: 90%;
+      }
+    }
+  }
+}

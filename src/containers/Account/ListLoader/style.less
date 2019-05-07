@@ -1,0 +1,16 @@
+@import '../../../style/break_points.less';
+
+:local {
+  .component {
+    box-sizing: border-box;
+    margin: 2em 0 0 0;
+
+    > svg {
+      height: 150px;
+    }
+
+    @media @for-phone {
+      margin: 2em 0 0 1em;
+    }
+  }
+}

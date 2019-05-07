@@ -1,0 +1,412 @@
+@import '../main.less';
+@import '../../style/break_points.less';
+@import '../../style/colors.less';
+:local {
+  .Signing {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 99999;
+    > .css_main_signing {
+      box-sizing: border-box;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s 0s cubic-bezier(0.55, 0, 0.1, 1);
+      > .css_user_signing {
+        background-color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 60px 90px 60px 90px;
+        position: relative;
+        width: 500px;
+        > .back_to_login {
+          display: none;
+        }
+        > .social_login {
+          button.social {
+            align-items: center;
+            display: flex;
+            height: 60px;
+            justify-content: flex-start;
+            margin-bottom: 1em;
+            > i {
+              font-size: 1.5em;
+              margin: 0 1em 0 0.7em;
+            }
+          }
+        }
+        > .or {
+          margin: 2em 0;
+          text-align: center;
+        }
+        &.type_register {
+          > .back_to_login {
+            display: block;
+          }
+          > .social_login {
+            display: none;
+          }
+          > .or {
+            display: none;
+          }
+          > form {
+            > .other_options {
+              display: none;
+            }
+          }
+        }
+        > button.modal_action {
+          border: none;
+          cursor: pointer;
+          font-size: 1.5em;
+          height: 30px;
+          line-height: 1;
+          padding: 0;
+          position: absolute;
+          top: 1em;
+          width: 30px;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 100%;
+          }
+          &.back_to_login {
+            left: 1em;
+          }
+          &.close {
+            right: 1em;
+          }
+        }
+        > form {
+          > .error_message {
+            background-color: #ffeef0;
+            border: 1px solid #fa4258;
+            font-size: 18px;
+            margin: 10px 0;
+            padding: 10px;
+            > b {
+              color: #fa4258;
+              display: block;
+              margin: 0.67em 0;
+              margin-top: 0;
+              white-space: normal;
+              word-break: break-all;
+            }
+            span {
+              color: #fa4258;
+              display: block;
+              white-space: normal;
+              word-break: break-all;
+            }
+          }
+          .input_group {
+            margin: 0 0 .5em 0;
+            > label {
+              display: block;
+              margin: 0 0 .5em 0;
+            }
+            > .error_message {
+              color: @danger;
+              margin: 0 0 0 .5em;
+              visibility: hidden;
+            }
+            &.has-error {
+              > .error_message {
+                visibility: visible;
+              }
+            }
+          }
+          > .terms_and_conditions_wrapper {
+            align-items: center;
+            display: flex;
+            > label {
+              align-items: center;
+              display: flex;
+              margin: 0 .5em 0 0;
+            }
+            > a {
+              color: @primary;
+              &:hover {
+                color: darken(@primary, 50%);
+              }
+            }
+          }
+          > .other_options {
+            color: rgba(54, 52, 54, 0.5);
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0 0 0;
+            > a {
+              color: rgba(54, 52, 54, 0.5);
+              cursor: pointer;
+              text-decoration: none;
+              &:hover {
+                color: rgba(54, 52, 54, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+    @media @for-phone, @for-min-phone {
+      > .css_main_signing {
+        > .css_user_signing {
+          box-sizing: border-box;
+          height: 100vh;
+          padding: 60px 30px;
+          width: 100vw;
+          > button.modal_action {
+            background-color: transparent;
+          }
+          > .or {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .css_user_signing span[class*='css_title_'] {
+    color: @white;
+    display: inline-block;
+    font-size: 32px !important;
+    font-weight: bold;
+    margin-bottom: 35px;
+    margin-left: 0;
+    margin-top: 45px;
+    overflow: hidden;
+    /*_animation_default class*/
+    -webkit-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    vertical-align: top;
+    width: 100%;
+  }
+  .css_user_signing {
+    :global(.css_signing_input_register) {
+      background: #fff;
+      display: block;
+      margin-bottom: 100px;
+      margin-top: -100px;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      position: relative;
+      /*_animation_default class*/
+      -webkit-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+      -o-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+      transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+      z-index: 1;
+    }
+    :global(.css_signing_link_login) {
+      color: @primary;
+      display: block;
+      font-weight: bold;
+      margin-top: -10px;
+    }
+  }
+  .css_user_signing > form {
+    white-space: normal;
+  }
+  .css_user_signing > form > label {
+    margin-bottom: 30px;
+  }
+  .css_user_signing {
+    :global(.css_signing_input_register) > label {
+      margin-bottom: 30px;
+    }
+  }
+  .css_user_signing > span {
+    display: inline-block;
+  }
+  .css_user_signing {
+    :global(.css_signing_text) {
+      display: inline-block;
+      a {
+        color: #4bab86;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      :global(.css_input_checkbox_register) {
+        span[class*='title'] {
+          vertical-align: middle;
+        }
+      }
+    }
+    &[class*='_login'] {
+      :global(.css_signing_text) {
+        a {
+          display: block;
+          margin: 25px 0 30px;
+        }
+      }
+    }
+    &[class*='_register'] {
+      :global(.css_signing_text) a {
+        font-size: 14px;
+        margin-top: -8px;
+        padding-left: 25px;
+      }
+      :global(.css_signing_link_login) {
+        display: none;
+      }
+    }
+  }
+  .css_user_signing div[class*='css_signing_social'] {
+    color: @white;
+    margin: 0 0 10px;
+    text-align: center;
+    -webkit-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  .css_user_signing div[class*='css_signing_social'] > div {
+    margin-bottom: 10px;
+  }
+  .css_user_signing div[class*='css_signing_social'] span {
+    cursor: pointer;
+    display: block;
+    font-size: 32px;
+    padding: 5px 0;
+    /*_animation_default class*/
+    -webkit-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  .css_user_signing[class*='_register'] {
+    & +:global(.css_back_login) {
+      display: block;
+    }
+  }
+  /*Animate to login-register*/
+  .css_user_signing {
+    &[class*='_register'] {
+      :global(.css_signing_input_register) {
+        margin-bottom: 0;
+        margin-top: 0;
+        max-height: 230px;
+        opacity: 1;
+      }
+      :global(.css_signing_title) {
+        h3[class*='_register'] {
+          margin-left: 20%;
+          /*_animation_default class*/
+          -webkit-transition: all 0.2s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+          -o-transition: all 0.2s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+          transition: all 0.2s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+        }
+        h3[class*='_login'] {
+          margin-left: -20%;
+          width: 0;
+        }
+      }
+      .css_signing_or_text_login {
+        display: none;
+      }
+    }
+    &[class*='_login'] {
+      :global(.css_signing_input_register) {
+        visibility: hidden;
+      }
+      :global(.css_signing_title) {
+        h3[class*='_register'] {
+          margin-left: -100%;
+          width: 0;
+        }
+        h3[class*='_login'] {
+          /*_animation_default class*/
+          -webkit-transition: all 0.2s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+          -o-transition: all 0.2s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+          transition: all 0.2s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+        }
+      }
+    }
+  }
+  .css_user_signing > form > button span[class*='css_button_text'] {
+    display: none;
+  }
+  .css_user_signing[class*='_login'] > form > button span[class*='_login'], .css_user_signing[class*='_register'] > form > button span[class*='_register'] {
+    display: block;
+  }
+  .css_user_signing[class*='_register'] div[class*='css_signing_social'] {
+    height: 0;
+    line-height: 0;
+    margin: 0;
+  }
+  .css_user_signing[class*='_login'] {
+    :global(.css_signing_text) {
+      * {
+        .animation(all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1));
+      }
+    }
+  }
+  .css_user_signing form {
+    :global(.css_button_bgLess_login) {
+      padding-top: 30px;
+      .animation(all 0.2s 0s cubic-bezier(0.55, 0, 0.1, 1));
+      & > span {
+        display: block;
+      }
+      & > button {
+        background-color: transparent;
+        color: @primary;
+        font-size: 14px;
+        height: auto;
+        margin-top: 2px;
+        padding: 0;
+      }
+    }
+  }
+  .css_user_signing[class*='_register'] {
+    :global(.css_signing_text) {
+      *[class*='_login'] {
+        display: block;
+        margin-top: -20px;
+        opacity: 0;
+      }
+    }
+  }
+  .css_user_signing[class*='_login'] {
+    :global(.css_signing_text) {
+      *[class*='_register'] {
+        display: block;
+        margin: 0;
+        max-height: 0;
+        max-width: 0;
+        overflow: hidden;
+        padding: 0;
+        visibility: hidden;
+      }
+    }
+  }
+  .css_user_signing[class*='_register'] {
+    :global(.css_signing_text) {
+      *[class*='_register'] {
+        display: block;
+        max-height: 200px;
+        max-width: 400px;
+        visibility: visible;
+      }
+    }
+  }
+  .css_user_signing[class*='_register'] form {
+    :global(.css_button_bgLess_login) {
+      display: block;
+      margin-top: -44px;
+      opacity: 0;
+      padding-top: 0;
+      position: relative;
+      z-index: -1;
+    }
+  }
+  .css_user_signing[class*='_register'] div[class*='css_signing_social'] span {
+    font-size: 0;
+    padding: 0;
+  }
+}

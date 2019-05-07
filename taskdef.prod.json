@@ -1,0 +1,65 @@
+{
+  "family": "production-website",
+  "containerDefinitions": [
+    {
+      "image": "%REPOSITORY_URI%:%BUILD_TAG%",
+      "name": "production-website",
+      "memory": 500,
+      "memoryReservation": 400,
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 3000
+        }
+      ],
+      "environment": [
+        {
+          "name": "APPLICATION_NAME",
+          "value": "the-asia-web"
+        },
+        {
+          "name": "LOGGING_LEVEL",
+          "value": "error"
+        },
+        {
+          "name": "NODE_ENV",
+          "value": "production"
+        },
+        {
+          "name": "PUBLIC_URL",
+          "value": "https://d3jq6ro99p575u.cloudfront.net/the-asia-web"
+        },
+        {
+          "name": "SERVER_TYPE",
+          "value": "production"
+        },
+        {
+          "name": "SLACK_HOOK_URL",
+          "value": "https://hooks.slack.com/services/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"
+        },
+        {
+          "name": "APP_URL",
+          "value": "https://www.theasia.com"
+        },
+        {
+          "name": "BASE_API_URL",
+          "value": "https://api.theasia.com"
+        },
+        {
+          "name": "BLOG_URL",
+          "value": "https://blog.theasia.com/?json=get_recent_posts&count=5&cat="
+        },
+        {
+          "name": "IMGIX_URL",
+          "value": "https://theasia.imgix.net"
+        },
+        {
+          "name": "GRAPHQL_URL",
+          "value": "https://api.theasia.com/wwwtheasia_graphql"
+        }
+      ]
+    }
+  ]
+}

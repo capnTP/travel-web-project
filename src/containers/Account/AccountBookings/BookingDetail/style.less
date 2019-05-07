@@ -1,0 +1,129 @@
+:local {
+  .BookingDetail {
+    background: white;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px 30px 0 30px;
+    width: 100%;
+
+    > * {
+      border-bottom: 1px solid rgba(199, 197, 197, 0.5);
+      padding: 1em 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    > .header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0 0 1em 0;
+
+      > .close_button {
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    > .content {
+      padding-bottom: 0;
+      padding-top: 15px;
+
+      .flex_card {
+        display: flex;
+        padding-bottom: 15px;
+
+        strong {
+          flex: 1;
+          text-align: right;
+        }
+      }
+    }
+
+    > .booking_members {
+      color: black;
+
+      > .member {
+        display: flex;
+        margin: 10px 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        > div {
+          flex: 1;
+        }
+
+        > .member_count .multiple {
+          font-size: 12px;
+        }
+
+        > .currency_wrapper {
+          text-align: right;
+
+          .currency {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    > .total_price_wrapper {
+      align-items: center;
+      display: flex;
+      padding: 20px 0;
+
+      > div {
+        flex: 1;
+
+        > .total_txt {
+          font-size: 18px;
+        }
+
+        &.currency_wrapper {
+          text-align: right;
+
+          > .currency {
+            color: #ff8733;
+            margin-right: 10px;
+          }
+
+          > .amount {
+            color: #ff8733;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    > .cancellation_policy_wrapper {
+      > .policy_type_wrapper {
+        margin-bottom: 15px;
+
+        > .policy_type {
+          color: black;
+          font-size: 16px;
+          margin-right: 10px;
+        }
+
+        > .policy_name {
+          color: #ff8733;
+        }
+      }
+
+      > .refund_txt {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../src/style/colors.less';
+
+:local {
+  .container {
+    display: flex;
+
+    > * {
+      margin: 0 0 0 1em;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    > .color_box {
+      align-items: center;
+      border-radius: 4px;
+      color: white;
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      letter-spacing: 1px;
+      width: 100px;
+
+      &.primary {
+        background-color: @primary;
+      }
+
+      &.secondary {
+        background-color: @secondary;
+      }
+
+      &.danger {
+        background-color: @danger;
+      }
+
+      &.warning {
+        background-color: @warning;
+      }
+    }
+  }
+}

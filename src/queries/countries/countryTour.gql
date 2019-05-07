@@ -1,0 +1,7 @@
+query {
+  countryTour {
+    id
+    name
+    image
+  }
+}

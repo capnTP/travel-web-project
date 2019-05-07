@@ -1,0 +1,22 @@
+query {
+  countryDestinations {
+    id
+    name
+    cities {
+      name
+      slug
+      toursCount {
+        total
+        tours
+        activities
+        transportation
+      }
+    }
+    data {
+      id
+      keyword
+      url
+      order
+    }
+  }
+}

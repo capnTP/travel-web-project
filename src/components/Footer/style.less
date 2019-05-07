@@ -1,0 +1,178 @@
+@import '../main.less';
+@footerColorTop: rgba(54, 52, 54, 0.1);
+@footerColorBottom: rgba(54, 52, 54, 0.8);
+:local {
+  .footer {
+    background-color: @footerColorTop;
+    box-sizing: border-box;
+    width: 100%;
+    > .footer_container {
+      border-bottom: 3px solid @white;
+      border-top: 3px solid @white;
+      width: 100%;
+      > section {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 30px 0;
+        width: 100%;
+        .max-content-width();
+        > .left {
+          flex: .6;
+          > .title {
+            color: @black;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          > .top_cities {
+            width: 100%;
+            > ul {
+              list-style: none;
+              padding: 0;
+              > li {
+                color: @lightBlack;
+                float: left;
+                font-size: 14px;
+                line-height: 1.71;
+                width: 35%;
+              }
+            }
+          }
+        }
+        > .right {
+          flex: .4;
+          > .title {
+            font-size: 14px;
+            font-weight: bold;
+          }
+          > .top_cities {
+            width: 100%;
+            > ul {
+              list-style: none;
+              padding: 0;
+              > li {
+                color: @lightBlack;
+                float: left;
+                font-size: 14px;
+                line-height: 1.71;
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .bottom {
+      background-color: @footerColorBottom;
+      > .footer_bottom {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 30px 0;
+        width: 100%;
+        .max-content-width();
+        > .left {
+          flex: .6;
+          > span {
+            color: @white;
+            display: block;
+            font-size: 14px;
+            line-height: 1.71;
+          }
+        }
+        > .right {
+          flex: .4;
+          > span {
+            color: @white;
+            font-weight: bold;
+          }
+          > .payment_option {
+            width: 100%;
+            > ul {
+              list-style: none;
+              max-width: 300px;
+              padding: 0;
+              width: 100%;
+              > li {
+                float: left;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                img {
+                  border-radius: 2.7px;
+                  height: 26.9px;
+                  width: 44.9px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media @for-phone, @for-min-phone {
+      > .footer_container {
+        > section {
+          box-sizing: border-box;
+          flex-direction: column;
+          max-width: 100%;
+          padding: 40px;
+          > .left {
+            flex: 1;
+            > .top_cities {
+              width: 100%;
+              > ul {
+                width: 100%;
+                > li {
+                  font-size: 16px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+          > .right {
+            flex: 1;
+            margin-top: 30px;
+            > .top_cities {
+              width: 100%;
+              > ul {
+                width: 100%;
+                > li {
+                  font-size: 16px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .bottom {
+        padding: 40px;
+        > .footer_bottom {
+          flex-direction: column-reverse;
+          max-width: 100%;
+          > .left {
+            flex: 1;
+            > span {
+              line-height: 2;
+            }
+          }
+          > .right {
+            flex: 1;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    @media @for-big-desktop-up {
+      > .footer_container {
+        > section {
+          max-width: 1200px;
+        }
+        > .bottom {
+          max-width: 1200px;
+        }
+      }
+    }
+  }
+}
