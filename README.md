@@ -1,8 +1,3 @@
-# the-asia-web
-
-production https://www.theasia.com/
-staging: https://www.theasiadev.com/
-
 ## development
 
 copy-paste code below into `<project-root>/.env`
