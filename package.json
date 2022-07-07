@@ -42,7 +42,7 @@
     "i18next-node-fs-backend": "1.0.0",
     "i18next-xhr-backend": "1.5.1",
     "isomorphic-fetch": "2.2.1",
-    "moment": "2.22.2",
+    "moment": "2.29.4",
     "paypal-checkout": "4.0.218",
     "prettier": "1.15.2",
     "promise": "8.0.1",
